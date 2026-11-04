@@ -231,4 +231,4 @@ The benchmarks are the CrowdFlower "Twitter US Airline Sentiment" and "Brands an
 
 ## Development note
 
-I built this in about a day with Claude, an AI coding assistant. Claude wrote most of the code and proposed much of the design. I ran the LLM results reported here on my own laptop, re-ran the baseline tables, read the reports, and went through the code so that I can explain it and change it.
+I built this in about a day with Claude as an AI coding assistant. I ran the LLM results reported here on my own laptop, re-ran the baseline tables, read the reports, and went through the code so that I can explain it and change it.
