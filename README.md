@@ -9,13 +9,16 @@ It runs three ways, with the same code: with no LLM at all, on a local model wit
 | Report | Data | Model and time |
 | --- | --- | --- |
 | [Full sample](output_sample/gemini_flash_lite/report.md) | 4,200 synthetic comments | Gemini 3.5 Flash-Lite on its free tier, 14.6 minutes |
-| [Real tweets](output_sample/gemini_airline_1000/report.md) | 1,000 public airline tweets | Gemini 3.5 Flash-Lite, about 7 minutes |
+| [Real product tweets](output_sample/gemini_sxsw_1000/report.md) | 1,000 public tweets about Apple and Google products, SXSW 2011 | Gemini 3.5 Flash-Lite, about 14 minutes |
+| [Real airline tweets](output_sample/gemini_airline_1000/report.md) | 1,000 public tweets to US airlines, February 2015 | Gemini 3.5 Flash-Lite, about 7 minutes |
 | [Local model](output_sample/ollama_qwen3_1500/report.md) | 1,500 synthetic comments | qwen3:4b on my laptop's CPU, about 3 hours |
 | [No LLM](output_sample/rules_only/report.md) | 4,200 synthetic comments | Rules only, in seconds |
 
 The [full HTML version of the first report](https://simonpanigrahi.github.io/comment-insight-agent/output_sample/gemini_flash_lite/report.html) has the charts and clickable evidence. Each folder also holds its `report.html` and `run_log.jsonl`, the audit trail.
 
-On 300 tweets labelled by people, Gemini's labels reached a macro-F1 of 0.816 on airline tweets and 0.673 on product tweets, against 0.573 and 0.462 for rules alone. qwen3:4b reached 0.754 on the airline tweets. The full table and its limits are under [Accuracy](#accuracy-measured-on-real-data).
+The product tweets come from the week [the iPad 2 launched and Apple opened a pop-up store at SXSW](https://www.macrumors.com/2011/03/10/apple-to-open-pop-up-temporary-store-at-sxsw-for-ipad-2-launch/). With no hints, the agent found topics such as Apple store, iPad products and iPhone usage.
+
+On 300 tweets labelled by people, Gemini's labels reached a macro-F1 of 0.816 on airline tweets and 0.673 on product tweets, against 0.573 and 0.462 for rules alone. qwen3:4b reached 0.754 on the airline tweets. In the whole-agent run on 1,000 product tweets, Gemini reached 0.666, against 0.482 for rules on the same tweets. The full table and its limits are under [Accuracy](#accuracy-measured-on-real-data).
 
 ## Try it in two minutes
 
@@ -38,13 +41,29 @@ python run.py doctor --provider ollama
 python run.py analyse data/sample_comments.csv --provider ollama --title "Kestrel One launch"
 
 # Or a cloud API, for sample data only (copy .env.example to .env and put your key in it)
-python run.py doctor --provider gemini
-python run.py analyse data/sample_comments.csv --provider gemini --title "Kestrel One launch"
+python run.py doctor --provider gemini --model gemini-3.5-flash-lite
+python run.py analyse data/sample_comments.csv --provider gemini --model gemini-3.5-flash-lite --title "Kestrel One launch"
 ```
 
 A local model has no cap on calls, so it labels every distinct comment and shows the time left. `doctor` gives a first estimate, and if it is slow, `python scripts/speed_test.py` shows whether the model is on the GPU and what to change. To shorten a run, use `--limit 1000` for a random sample of rows, or `--max-llm-calls 110` to label part of the file and let a small student model cover the rest. Cloud free tiers have daily limits, so their presets stop within them. If a run stops midway, the same command continues from the cache.
 
 Use your own file the same way. Column names are detected, so a file with `text`, `tweet_text` or `message` all work. If detection fails, use `--text-col`.
+
+## Check it yourself
+
+See how one comment is read, with its sentiment, reason and quote. The first command uses rules only and needs no key:
+
+```bash
+python scripts/try_comment.py "Wow, the phone lasted a whole 2 hours. Great job."
+python scripts/try_comment.py "Wow, the phone lasted a whole 2 hours. Great job." --provider gemini --model gemini-3.5-flash-lite
+```
+
+Compare a finished run with labels written by people, and read where they differ:
+
+```bash
+python scripts/get_benchmarks.py
+python scripts/compare_labels.py output_sample/gemini_airline_1000 benchmarks/data/airline.csv --label airline_sentiment --reason negativereason
+```
 
 ## How each requirement is met
 
@@ -123,6 +142,7 @@ Measured with `scripts/evaluate.py` on public tweets labelled by humans. Metrics
 How to read this:
 
 - The two LLM rows use 300 random tweets from each set, so each accuracy could be about 5 points higher or lower, and the gap between the two models is close to that. The other rows use the full sets. On the same 300 tweets the rules score 0.623 / 0.582 on airline and 0.497 / 0.448 on SXSW, so the comparison holds.
+- In the whole-agent run on 1,000 SXSW tweets, Gemini's labels scored 0.750 / 0.666 against people on the 983 with a clear human label, close to the 300-tweet result. Rules score 0.561 / 0.482 on those same tweets. Only 6 of the 983 were positive read as negative or the reverse. Most disagreements are over where neutral begins: of the 338 tweets people called positive, the agent called 143 neutral. Some of those human labels look generous and some of the agent's calls look wrong, so `scripts/compare_labels.py` prints them to read.
 - VADER, a popular rule-based tool, and this project's rules all score below always guessing the commonest class on accuracy, on both datasets. Their macro-F1 is higher because they do find the small classes. So rules are only the fallback here, and a rules-only report says so at the top.
 - The rule words were adjusted while looking at the airline data, so the rules row is a little optimistic.
 - The student rows use human labels as the teacher, so they are an upper limit for what an LLM teacher could give at that size.
@@ -135,7 +155,7 @@ How to read this:
 
 **Why an LLM cannot remove an alert.** In that same run, qwen3:4b read 10 of the 22 planted safety, legal and privacy reports as not urgent, including 4 of the 14 safety reports. All 22 stayed on the alert list, marked as doubted, for a person to read. On the full sample, Gemini doubted 5 of the 61, all of them legal.
 
-**A real-data check of the spike finder.** On the airline tweets, with no LLM, the agent reports that complaints about cancellations rose 3.6 times from 21 February 2015, with "dfw", "dallas", "rebook" and "hrs" becoming far more common. It knows nothing about the outside world, but [an ice storm cancelled about 1,100 flights at DFW on 23 February 2015](https://www.reviewjournal.com/?p=181387). On a random 1,000 of these tweets, with Gemini, it flags complaints about flight status, baggage and boarding, and customer service rising between 20 and 23 February. The agent shows an association. The news link was found separately, after the run.
+**A real-data check of the spike finder.** On the airline tweets, with no LLM, the agent reports that complaints about cancellations rose 3.6 times from 21 February 2015, with "dfw", "dallas", "rebook" and "hrs" becoming far more common. It knows nothing about the outside world, but [an ice storm cancelled about 1,100 flights at DFW on 23 February 2015](https://www.reviewjournal.com/?p=181387). On a random 1,000 of these tweets, with Gemini, it flags negative comments rising in 6 topics, including flight cancellations and hold times, from about 22 February, and says a wider event may be behind this. The agent shows an association. The news link was found separately, after the run.
 
 ## Choices and what was rejected
 
@@ -172,7 +192,9 @@ python run.py ask output/sample_comments "what do people say about the warranty?
 - A label's reason is the model's own summary and is not checked. Only its evidence quote is. Reasons with different wording are counted separately.
 - The sample data is synthetic. It tests the system end to end, not real-world accuracy.
 - A spike's "drivers" are words that became more common at the same time. That shows an association, not a cause.
-- A spike counts complaints per day, not their share of all comments, so a rise in total volume lifts every topic. In the 1,000 airline tweets, the busiest day had about 3 times the usual number of tweets. If 4 or more topics rise together, the report says a wider event may be behind it.
+- A spike counts complaints per day, not their share of all comments, so a rise in total volume lifts every topic. In the 1,000 airline tweets, the busiest day had about 3 times the usual number of tweets. If 4 or more topics rise together, the report says a wider event may be behind it, as it did there.
+- Only the 3 largest spikes can be looked into. So a decisions list can say "No spike was found" for a topic whose spike is in the report, as the airline report does for flight cancellations. The spike figures are right, and this is a small bug in the investigation tool.
+- On real tweets, the common questions and feature requests lists pick up noise, so a person should review them.
 - Exact duplicates are merged, but near duplicates are not.
 - The impact score is a simple ranking aid, not a validated measure.
 - Rules read very little sarcasm and few Indian languages, so a rules-only report carries a warning.
@@ -220,14 +242,14 @@ agent/insights.py      choose checks, write findings, verify them
 agent/report.py        HTML, Markdown, CSV and JSON output
 agent/ask.py           question answering over a finished run
 agent/runlog.py        the audit trail
-scripts/               sample data generator, benchmark download, evaluation, speed test
+scripts/               sample data, benchmark download, evaluation, speed test, try one comment, compare with human labels
 ```
 
 ## Data
 
 `data/sample_comments.csv` is synthetic: the Kestrel One, its company and its comments are made up. It has planted patterns (a battery spike after an update, rare safety reports, sarcasm, Hinglish, Hindi, Odia, spam, injection attempts). `scripts/make_sample_data.py` rebuilds it.
 
-The benchmarks are the CrowdFlower "Twitter US Airline Sentiment" and "Brands and Product Emotions" datasets, downloaded from public mirrors by `scripts/get_benchmarks.py` and not stored here, apart from the airline tweets in `output_sample/gemini_airline_1000`. See the original publishers for their terms.
+The benchmarks are the CrowdFlower "Twitter US Airline Sentiment" and "Brands and Product Emotions" datasets, downloaded from public mirrors by `scripts/get_benchmarks.py` and not stored here, apart from the tweets in the sample reports under `output_sample/`. The airline tweets are about a service rather than a product, so the SXSW tweets about Apple and Google products are the closer match to the task. The airline set adds human reasons for its negative tweets, which `scripts/compare_labels.py` can show. See the original publishers for their terms.
 
 ## Development note
 
