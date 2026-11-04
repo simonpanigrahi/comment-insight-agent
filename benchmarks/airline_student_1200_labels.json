@@ -1,0 +1,8 @@
+{
+ "name": "airline student 1200 labels",
+ "rows": 4392,
+ "accuracy": 0.719,
+ "macro_f1": 0.64,
+ "majority_baseline": 0.627,
+ "train_labels": 1200
+}

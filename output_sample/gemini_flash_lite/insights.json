@@ -1,0 +1,1533 @@
+{
+ "title": "Kestrel One launch",
+ "insights": {
+  "headline": "Overall sentiment across 4,054 analysed comments is 43.8% negative, with battery life emerging as the most prominent negative topic.",
+  "headline_fact_ids": [
+   "F2",
+   "F9"
+  ],
+  "points": [
+   {
+    "text": "Battery life received 933 comments, which is 23.0% of all analysed comments, with 76.7% being negative and an impact score of 1,392.5.",
+    "fact_ids": [
+     "F9"
+    ]
+   },
+   {
+    "text": "Negative comments for Battery life rose from about 16.4 per day to about 41.3 per day from 2026-09-23, representing a 2.5 times increase.",
+    "fact_ids": [
+     "F18"
+    ]
+   },
+   {
+    "text": "Words far more common in negative Battery life comments from 2026-09-23 than before it include v1.2, update, half, software, backup, and cut, though this shows they may be linked rather than a proven cause.",
+    "fact_ids": [
+     "F57"
+    ]
+   },
+   {
+    "text": "Safety reports account for 38 comments with a total engagement of 2,328, first seen on 2026-09-15.",
+    "fact_ids": [
+     "F8"
+    ]
+   },
+   {
+    "text": "Legal or fraud reports comprise 16 comments with a total engagement of 98, first seen on 2026-09-19, where 5 were judged false alarms by the LLM.",
+    "fact_ids": [
+     "F4"
+    ]
+   },
+   {
+    "text": "Privacy or security reports total 7 comments with a total engagement of 49, first seen on 2026-09-16.",
+    "fact_ids": [
+     "F6"
+    ]
+   }
+  ],
+  "actions": [
+   {
+    "action": "Review the safety reports and associated high-engagement feedback",
+    "why": "Safety reports total 38 comments with a high engagement of 2,328.",
+    "owner": "Engineering",
+    "urgency": "today",
+    "fact_ids": [
+     "F8"
+    ]
+   },
+   {
+    "action": "Check the legal or fraud report comments",
+    "why": "There are 16 comments marked as legal or fraud reports with total engagement 98.",
+    "owner": "Legal",
+    "urgency": "today",
+    "fact_ids": [
+     "F4"
+    ]
+   },
+   {
+    "action": "Investigate the privacy and security report comments",
+    "why": "Privacy or security reports comprise 7 comments with total engagement 49.",
+    "owner": "Engineering",
+    "urgency": "today",
+    "fact_ids": [
+     "F6"
+    ]
+   },
+   {
+    "action": "Inspect the urgent reports flagged by the LLM",
+    "why": "The LLM flagged 4 comments as urgent reports with total engagement 19.",
+    "owner": "Customer Support",
+    "urgency": "today",
+    "fact_ids": [
+     "F5"
+    ]
+   },
+   {
+    "action": "Analyze the spike in negative battery life comments following 2026-09-23",
+    "why": "Negative comments rose from about 16.4 per day to about 41.3 per day, and terms like v1.2 and update may be linked.",
+    "owner": "Product",
+    "urgency": "this_week",
+    "fact_ids": [
+     "F18",
+     "F57"
+    ]
+   },
+   {
+    "action": "Address customer service tickets taking too long",
+    "why": "Unresolved support tickets taking too long is the top negative reason in customer service with 25 comments.",
+    "owner": "Customer Support",
+    "urgency": "this_week",
+    "fact_ids": [
+     "F28"
+    ]
+   }
+  ]
+ },
+ "facts": [
+  {
+   "id": "F1",
+   "kind": "data",
+   "text": "Received 4,200 comments. Removed 115 spam, 24 no content, 7 injection. Analysed 4,054 comments, of which 2,533 are distinct texts. The LLM labelled 100% of the analysed comments.",
+   "topic": "",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F2",
+   "kind": "overall",
+   "text": "Sentiment across 4,054 comments: 43.8% negative (1,776), 33.5% positive (1,357), 22.7% neutral (921).",
+   "topic": "",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F3",
+   "kind": "intent",
+   "text": "What people are doing in their comments: complaint 43.9%, praise 32.3%, question 12.3%, other 7.1%, suggestion 3.0%, purchase intent 1.5%.",
+   "topic": "",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F4",
+   "kind": "alert",
+   "text": "Possible legal or fraud reports: 16 comments. Total engagement 98. First seen 2026-09-19. The LLM judged 5 of them false alarms, but they stay on this list for a person to check.",
+   "topic": "",
+   "alert": true,
+   "comment_ids": [
+    "K00571",
+    "K00708",
+    "K03667",
+    "K03597",
+    "K02266",
+    "K02925",
+    "K02463",
+    "K03167",
+    "K03118",
+    "K01071",
+    "K01719",
+    "K01197",
+    "K00013"
+   ]
+  },
+  {
+   "id": "F5",
+   "kind": "alert",
+   "text": "Flagged by the LLM as urgent reports: 4 comments. Total engagement 19. First seen 2026-09-18.",
+   "topic": "",
+   "alert": true,
+   "comment_ids": [
+    "K04068",
+    "K01875"
+   ]
+  },
+  {
+   "id": "F6",
+   "kind": "alert",
+   "text": "Privacy or security reports: 7 comments. Total engagement 49. First seen 2026-09-16.",
+   "topic": "",
+   "alert": true,
+   "comment_ids": [
+    "K04025",
+    "K04103",
+    "K02551",
+    "K00276",
+    "K02360",
+    "K00875"
+   ]
+  },
+  {
+   "id": "F7",
+   "kind": "alert",
+   "text": "Reputation reports: 6 comments. Total engagement 18. First seen 2026-09-26.",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "K03272",
+    "K01830",
+    "K03843",
+    "K00898"
+   ]
+  },
+  {
+   "id": "F8",
+   "kind": "alert",
+   "text": "Safety reports: 38 comments. Total engagement 2,328. First seen 2026-09-15.",
+   "topic": "",
+   "alert": true,
+   "comment_ids": [
+    "K01641",
+    "K01734",
+    "K01723",
+    "K02941",
+    "K02288",
+    "K00714",
+    "K00731",
+    "K02622",
+    "K04148",
+    "K00953",
+    "K01556",
+    "K00026",
+    "K00663",
+    "K01165",
+    "K01674",
+    "K00927",
+    "K03126",
+    "K03678",
+    "K00646",
+    "K03459"
+   ]
+  },
+  {
+   "id": "F9",
+   "kind": "topic",
+   "text": "Battery life: 933 comments (23.0% of all), 76.7% negative, 14.9% positive, impact score 1,392.5. Negative comments are steady.",
+   "topic": "Battery life",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F10",
+   "kind": "topic",
+   "text": "Delivery status: 375 comments (9.3% of all), 57.3% negative, 18.4% positive, impact score 418.9. Negative comments are falling.",
+   "topic": "Delivery status",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F11",
+   "kind": "topic",
+   "text": "General impression: 662 comments (16.3% of all), 32.0% negative, 59.2% positive, impact score 413.9. Negative comments are falling.",
+   "topic": "General impression",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F12",
+   "kind": "topic",
+   "text": "Customer service: 297 comments (7.3% of all), 67.3% negative, 9.1% positive, impact score 372.1. Negative comments are falling.",
+   "topic": "Customer service",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F13",
+   "kind": "topic",
+   "text": "General opinion: 255 comments (6.3% of all), 36.9% negative, 43.1% positive, impact score 181.3. Negative comments are falling.",
+   "topic": "General opinion",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F14",
+   "kind": "topic",
+   "text": "Phone design: 318 comments (7.8% of all), 27.0% negative, 51.6% positive, impact score 171.8. Negative comments are falling.",
+   "topic": "Phone design",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F15",
+   "kind": "topic",
+   "text": "Camera quality: 553 comments (13.6% of all), 11.8% negative, 68.2% positive, impact score 124.8. Negative comments are falling.",
+   "topic": "Camera quality",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F16",
+   "kind": "topic",
+   "text": "Launch offer: 125 comments (3.1% of all), 26.4% negative, 32.0% positive, impact score 66.9. Negative comments are falling.",
+   "topic": "Launch offer",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F17",
+   "kind": "topic",
+   "text": "Company support: 50 comments (1.2% of all), 36.0% negative, 42.0% positive, impact score 34.1.",
+   "topic": "Company support",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F18",
+   "kind": "spike",
+   "text": "Spike in Battery life: negative comments rose from about 16.4 per day to about 41.3 per day from 2026-09-23 (2.5 times).",
+   "topic": "Battery life",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F19",
+   "kind": "reason",
+   "text": "Top negative reason in Battery life: \"update ruined battery life\" (115 comments).",
+   "topic": "Battery life",
+   "alert": false,
+   "comment_ids": [
+    "K00022",
+    "K00039",
+    "K00065",
+    "K00130",
+    "K00137",
+    "K00174",
+    "K00234",
+    "K00293",
+    "K00331",
+    "K00358",
+    "K00369",
+    "K00456",
+    "K00494",
+    "K00516",
+    "K00554",
+    "K00593",
+    "K00596",
+    "K00609",
+    "K00633",
+    "K00647"
+   ]
+  },
+  {
+   "id": "F20",
+   "kind": "reason",
+   "text": "Top negative reason in Battery life: \"battery drains too fast\" (98 comments).",
+   "topic": "Battery life",
+   "alert": false,
+   "comment_ids": [
+    "K00003",
+    "K00009",
+    "K00031",
+    "K00075",
+    "K00199",
+    "K00208",
+    "K00242",
+    "K00251",
+    "K00271",
+    "K00288",
+    "K00345",
+    "K00402",
+    "K00439",
+    "K00462",
+    "K00535",
+    "K00605",
+    "K00683",
+    "K00691",
+    "K00719",
+    "K00867"
+   ]
+  },
+  {
+   "id": "F21",
+   "kind": "reason",
+   "text": "Top positive reason in Battery life: \"battery easily lasts a full day\" (27 comments).",
+   "topic": "Battery life",
+   "alert": false,
+   "comment_ids": [
+    "K00150",
+    "K00176",
+    "K00527",
+    "K00575",
+    "K00730",
+    "K00789",
+    "K00848",
+    "K01323",
+    "K01459",
+    "K01685",
+    "K02014",
+    "K02345",
+    "K02474",
+    "K02559",
+    "K02576",
+    "K02641",
+    "K02653",
+    "K02725",
+    "K02818",
+    "K02978"
+   ]
+  },
+  {
+   "id": "F22",
+   "kind": "reason",
+   "text": "Top negative reason in Delivery status: \"delivery has not arrived yet\" (36 comments).",
+   "topic": "Delivery status",
+   "alert": false,
+   "comment_ids": [
+    "K00010",
+    "K00021",
+    "K00091",
+    "K00149",
+    "K00206",
+    "K00282",
+    "K00387",
+    "K00497",
+    "K00515",
+    "K00565",
+    "K00711",
+    "K00756",
+    "K00829",
+    "K00894",
+    "K01111",
+    "K01298",
+    "K01334",
+    "K01575",
+    "K01631",
+    "K01915"
+   ]
+  },
+  {
+   "id": "F23",
+   "kind": "reason",
+   "text": "Top negative reason in Delivery status: \"delayed order delivery\" (30 comments).",
+   "topic": "Delivery status",
+   "alert": false,
+   "comment_ids": [
+    "K00343",
+    "K00378",
+    "K00576",
+    "K00617",
+    "K00624",
+    "K00643",
+    "K00767",
+    "K00935",
+    "K01076",
+    "K01218",
+    "K01693",
+    "K01793",
+    "K01797",
+    "K01843",
+    "K01916",
+    "K01917",
+    "K02010",
+    "K02181",
+    "K02564",
+    "K02898"
+   ]
+  },
+  {
+   "id": "F24",
+   "kind": "reason",
+   "text": "Top positive reason in Delivery status: \"fast delivery in two days\" (33 comments).",
+   "topic": "Delivery status",
+   "alert": false,
+   "comment_ids": [
+    "K00111",
+    "K00185",
+    "K00401",
+    "K00536",
+    "K00561",
+    "K00615",
+    "K00621",
+    "K00914",
+    "K00940",
+    "K00969",
+    "K01001",
+    "K01149",
+    "K01216",
+    "K01372",
+    "K01476",
+    "K01546",
+    "K01550",
+    "K01581",
+    "K01681",
+    "K01710"
+   ]
+  },
+  {
+   "id": "F25",
+   "kind": "reason",
+   "text": "Top negative reason in General impression: \"returning the product\" (20 comments).",
+   "topic": "General impression",
+   "alert": false,
+   "comment_ids": [
+    "K00186",
+    "K00220",
+    "K00227",
+    "K00296",
+    "K00327",
+    "K00577",
+    "K00904",
+    "K01146",
+    "K01989",
+    "K02389",
+    "K02899",
+    "K02943",
+    "K03011",
+    "K03017",
+    "K03505",
+    "K03560",
+    "K03614",
+    "K03719",
+    "K03846",
+    "K04020"
+   ]
+  },
+  {
+   "id": "F26",
+   "kind": "reason",
+   "text": "Top negative reason in General impression: \"waste of money and bad product\" (19 comments).",
+   "topic": "General impression",
+   "alert": false,
+   "comment_ids": [
+    "K00470",
+    "K00819",
+    "K00976",
+    "K01122",
+    "K01200",
+    "K01329",
+    "K01339",
+    "K01342",
+    "K01524",
+    "K01526",
+    "K01780",
+    "K01815",
+    "K01823",
+    "K02142",
+    "K02749",
+    "K03141",
+    "K03381",
+    "K03636",
+    "K03736"
+   ]
+  },
+  {
+   "id": "F27",
+   "kind": "reason",
+   "text": "Top positive reason in General impression: \"loves the display quality\" (36 comments).",
+   "topic": "General impression",
+   "alert": false,
+   "comment_ids": [
+    "K00093",
+    "K00127",
+    "K00303",
+    "K00332",
+    "K00346",
+    "K00361",
+    "K00444",
+    "K00507",
+    "K00707",
+    "K00729",
+    "K00754",
+    "K00912",
+    "K01192",
+    "K01416",
+    "K01568",
+    "K01754",
+    "K01848",
+    "K01938",
+    "K01957",
+    "K02006"
+   ]
+  },
+  {
+   "id": "F28",
+   "kind": "reason",
+   "text": "Top negative reason in Customer service: \"unresolved support ticket taking too long\" (25 comments).",
+   "topic": "Customer service",
+   "alert": false,
+   "comment_ids": [
+    "K00487",
+    "K00544",
+    "K00586",
+    "K00749",
+    "K00858",
+    "K00998",
+    "K01185",
+    "K01600",
+    "K02314",
+    "K02374",
+    "K02403",
+    "K02522",
+    "K02800",
+    "K02843",
+    "K02955",
+    "K03208",
+    "K03307",
+    "K03368",
+    "K03422",
+    "K03426"
+   ]
+  },
+  {
+   "id": "F29",
+   "kind": "reason",
+   "text": "Top negative reason in Customer service: \"customer care does not answer calls\" (24 comments).",
+   "topic": "Customer service",
+   "alert": false,
+   "comment_ids": [
+    "K00018",
+    "K00020",
+    "K00146",
+    "K00344",
+    "K00382",
+    "K00502",
+    "K00585",
+    "K01316",
+    "K01338",
+    "K01520",
+    "K01529",
+    "K01545",
+    "K02129",
+    "K02198",
+    "K02422",
+    "K02579",
+    "K02582",
+    "K02834",
+    "K02875",
+    "K03536"
+   ]
+  },
+  {
+   "id": "F30",
+   "kind": "reason",
+   "text": "Top positive reason in Customer service: \"fast replacement service\" (9 comments).",
+   "topic": "Customer service",
+   "alert": false,
+   "comment_ids": [
+    "K00315",
+    "K00524",
+    "K00871",
+    "K00893",
+    "K01125",
+    "K01883",
+    "K02591",
+    "K03425",
+    "K03788"
+   ]
+  },
+  {
+   "id": "F31",
+   "kind": "reason",
+   "text": "Top negative reason in General opinion: \"phone is overpriced\" (14 comments).",
+   "topic": "General opinion",
+   "alert": false,
+   "comment_ids": [
+    "K00152",
+    "K00772",
+    "K00994",
+    "K01697",
+    "K02113",
+    "K02126",
+    "K02369",
+    "K02857",
+    "K02879",
+    "K03054",
+    "K03331",
+    "K03525",
+    "K03738",
+    "K03771"
+   ]
+  },
+  {
+   "id": "F32",
+   "kind": "reason",
+   "text": "Top negative reason in General opinion: \"not worth the price\" (11 comments).",
+   "topic": "General opinion",
+   "alert": false,
+   "comment_ids": [
+    "K00613",
+    "K00755",
+    "K00907",
+    "K01016",
+    "K01445",
+    "K01504",
+    "K02853",
+    "K03132",
+    "K03374",
+    "K03390",
+    "K03496"
+   ]
+  },
+  {
+   "id": "F33",
+   "kind": "reason",
+   "text": "Top positive reason in General opinion: \"recommends buying the great phone\" (17 comments).",
+   "topic": "General opinion",
+   "alert": false,
+   "comment_ids": [
+    "K00212",
+    "K00245",
+    "K00312",
+    "K00492",
+    "K00495",
+    "K01349",
+    "K01379",
+    "K01466",
+    "K01485",
+    "K01795",
+    "K02050",
+    "K02249",
+    "K02472",
+    "K02929",
+    "K02961",
+    "K03886",
+    "K03997"
+   ]
+  },
+  {
+   "id": "F34",
+   "kind": "reason",
+   "text": "Top negative reason in Phone design: \"phone is too slippery\" (12 comments).",
+   "topic": "Phone design",
+   "alert": false,
+   "comment_ids": [
+    "K00113",
+    "K01737",
+    "K02020",
+    "K02044",
+    "K02386",
+    "K02395",
+    "K02550",
+    "K03096",
+    "K03451",
+    "K03456",
+    "K03589",
+    "K03615"
+   ]
+  },
+  {
+   "id": "F35",
+   "kind": "reason",
+   "text": "Top negative reason in Phone design: \"back panel feels cheap\" (11 comments).",
+   "topic": "Phone design",
+   "alert": false,
+   "comment_ids": [
+    "K00341",
+    "K00648",
+    "K00721",
+    "K00982",
+    "K00993",
+    "K01092",
+    "K01467",
+    "K01723",
+    "K02490",
+    "K02680",
+    "K03152"
+   ]
+  },
+  {
+   "id": "F36",
+   "kind": "reason",
+   "text": "Top positive reason in Phone design: \"loves the blue colour\" (32 comments).",
+   "topic": "Phone design",
+   "alert": false,
+   "comment_ids": [
+    "K00034",
+    "K00038",
+    "K00638",
+    "K00701",
+    "K00836",
+    "K00967",
+    "K01151",
+    "K01440",
+    "K01692",
+    "K01796",
+    "K01837",
+    "K01994",
+    "K02072",
+    "K02459",
+    "K02804",
+    "K02991",
+    "K03164",
+    "K03174",
+    "K03212",
+    "K03474"
+   ]
+  },
+  {
+   "id": "F37",
+   "kind": "reason",
+   "text": "Top negative reason in Camera quality: \"green tint in low light photos\" (12 comments).",
+   "topic": "Camera quality",
+   "alert": false,
+   "comment_ids": [
+    "K00198",
+    "K00572",
+    "K01072",
+    "K01299",
+    "K01990",
+    "K02078",
+    "K02708",
+    "K02763",
+    "K02924",
+    "K03231",
+    "K03308",
+    "K03316"
+   ]
+  },
+  {
+   "id": "F38",
+   "kind": "reason",
+   "text": "Top negative reason in Camera quality: \"indoor photos look washed out\" (11 comments).",
+   "topic": "Camera quality",
+   "alert": false,
+   "comment_ids": [
+    "K00072",
+    "K00239",
+    "K00977",
+    "K01313",
+    "K01703",
+    "K01903",
+    "K02097",
+    "K02491",
+    "K02781",
+    "K02794",
+    "K02856"
+   ]
+  },
+  {
+   "id": "F39",
+   "kind": "reason",
+   "text": "Top positive reason in Camera quality: \"loves the camera quality\" (47 comments).",
+   "topic": "Camera quality",
+   "alert": false,
+   "comment_ids": [
+    "K00001",
+    "K00126",
+    "K00177",
+    "K00413",
+    "K00654",
+    "K00664",
+    "K00679",
+    "K00878",
+    "K00924",
+    "K01015",
+    "K01127",
+    "K01158",
+    "K01300",
+    "K01365",
+    "K01380",
+    "K01436",
+    "K01630",
+    "K01728",
+    "K01845",
+    "K01898"
+   ]
+  },
+  {
+   "id": "F40",
+   "kind": "reason",
+   "text": "Top negative reason in Launch offer: \"launch offer was misleading\" (19 comments).",
+   "topic": "Launch offer",
+   "alert": false,
+   "comment_ids": [
+    "K00109",
+    "K00467",
+    "K00645",
+    "K01435",
+    "K01499",
+    "K01985",
+    "K01992",
+    "K02039",
+    "K02131",
+    "K02335",
+    "K02452",
+    "K02506",
+    "K02668",
+    "K03049",
+    "K03179",
+    "K03665",
+    "K03721",
+    "K03723",
+    "K04166"
+   ]
+  },
+  {
+   "id": "F41",
+   "kind": "reason",
+   "text": "Top negative reason in Launch offer: \"price increased after launch\" (9 comments).",
+   "topic": "Launch offer",
+   "alert": false,
+   "comment_ids": [
+    "K00389",
+    "K00622",
+    "K01448",
+    "K01773",
+    "K02215",
+    "K02284",
+    "K02933",
+    "K03219",
+    "K04086"
+   ]
+  },
+  {
+   "id": "F42",
+   "kind": "reason",
+   "text": "Top positive reason in Launch offer: \"satisfied with exchange offer\" (33 comments).",
+   "topic": "Launch offer",
+   "alert": false,
+   "comment_ids": [
+    "K00076",
+    "K00197",
+    "K00217",
+    "K00307",
+    "K00359",
+    "K00360",
+    "K00408",
+    "K00427",
+    "K00452",
+    "K00498",
+    "K00567",
+    "K00693",
+    "K00818",
+    "K01002",
+    "K01118",
+    "K01254",
+    "K01449",
+    "K01549",
+    "K01741",
+    "K01829"
+   ]
+  },
+  {
+   "id": "F43",
+   "kind": "reason",
+   "text": "Top negative reason in Company support: \"threatening legal action\" (4 comments).",
+   "topic": "Company support",
+   "alert": false,
+   "comment_ids": [
+    "K00571",
+    "K02463",
+    "K02925",
+    "K03958"
+   ]
+  },
+  {
+   "id": "F44",
+   "kind": "reason",
+   "text": "Top negative reason in Company support: \"refund delayed by three weeks\" (4 comments).",
+   "topic": "Company support",
+   "alert": false,
+   "comment_ids": [
+    "K00493",
+    "K01730",
+    "K01972",
+    "K03868"
+   ]
+  },
+  {
+   "id": "F45",
+   "kind": "reason",
+   "text": "Top positive reason in Company support: \"praises the team behind the product\" (14 comments).",
+   "topic": "Company support",
+   "alert": false,
+   "comment_ids": [
+    "K00077",
+    "K00722",
+    "K01465",
+    "K01480",
+    "K01888",
+    "K02384",
+    "K02816",
+    "K02965",
+    "K02992",
+    "K03239",
+    "K03654",
+    "K03672",
+    "K03963",
+    "K04124"
+   ]
+  },
+  {
+   "id": "F46",
+   "kind": "question",
+   "text": "Common question (35 comments): \"Is water damage covered by warranty?\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "K00084",
+    "K00166",
+    "K00175",
+    "K00253",
+    "K00373",
+    "K00410",
+    "K00417",
+    "K00549",
+    "K00725",
+    "K00738",
+    "K00997",
+    "K01005",
+    "K01033",
+    "K01136",
+    "K01239",
+    "K01301",
+    "K01419",
+    "K01493",
+    "K01617",
+    "K02153"
+   ]
+  },
+  {
+   "id": "F47",
+   "kind": "question",
+   "text": "Common question (31 comments): \"Which lens is used for portrait mode?\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "K00501",
+    "K00614",
+    "K00715",
+    "K00734",
+    "K00788",
+    "K00863",
+    "K00876",
+    "K01025",
+    "K01031",
+    "K01168",
+    "K01226",
+    "K01420",
+    "K01458",
+    "K01835",
+    "K01980",
+    "K02168",
+    "K02242",
+    "K02465",
+    "K02498",
+    "K02909"
+   ]
+  },
+  {
+   "id": "F48",
+   "kind": "question",
+   "text": "Common question (30 comments): \"How do I roll back the update?\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "K00052",
+    "K00173",
+    "K00187",
+    "K00301",
+    "K00336",
+    "K00429",
+    "K00530",
+    "K00811",
+    "K01014",
+    "K01256",
+    "K01354",
+    "K01470",
+    "K01510",
+    "K01533",
+    "K01711",
+    "K01744",
+    "K01859",
+    "K01943",
+    "K02180",
+    "K02223"
+   ]
+  },
+  {
+   "id": "F49",
+   "kind": "question",
+   "text": "Common question (29 comments): \"When will the blue variant be back in stock?\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "K00097",
+    "K00112",
+    "K00299",
+    "K00384",
+    "K00496",
+    "K00520",
+    "K00539",
+    "K00543",
+    "K00607",
+    "K00774",
+    "K00850",
+    "K00923",
+    "K01290",
+    "K01318",
+    "K01403",
+    "K01862",
+    "K02064",
+    "K02262",
+    "K02277",
+    "K02382"
+   ]
+  },
+  {
+   "id": "F50",
+   "kind": "question",
+   "text": "Common question (25 comments): \"does it support wireless charging?\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "K00069",
+    "K00224",
+    "K00314",
+    "K00484",
+    "K00485",
+    "K00793",
+    "K00851",
+    "K01050",
+    "K01056",
+    "K01306",
+    "K01326",
+    "K01781",
+    "K01923",
+    "K01965",
+    "K02222",
+    "K02913",
+    "K03275",
+    "K03387",
+    "K03436",
+    "K03464"
+   ]
+  },
+  {
+   "id": "F51",
+   "kind": "question",
+   "text": "Common question (22 comments): \"How much RAM is there in the base model?\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "K00051",
+    "K00236",
+    "K00672",
+    "K00928",
+    "K00960",
+    "K00987",
+    "K01141",
+    "K01212",
+    "K01422",
+    "K02154",
+    "K02183",
+    "K02218",
+    "K02527",
+    "K02654",
+    "K02870",
+    "K02964",
+    "K03403",
+    "K03514",
+    "K03518",
+    "K03521"
+   ]
+  },
+  {
+   "id": "F52",
+   "kind": "request",
+   "text": "Feature request (14 comments): \"Please add a pro video mode\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "K00191",
+    "K00830",
+    "K01211",
+    "K01426",
+    "K02032",
+    "K02049",
+    "K02227",
+    "K02359",
+    "K02387",
+    "K02645",
+    "K02902",
+    "K03078",
+    "K03537",
+    "K03795"
+   ]
+  },
+  {
+   "id": "F53",
+   "kind": "request",
+   "text": "Feature request (13 comments): \"bring back the app drawer\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "K00362",
+    "K00591",
+    "K00937",
+    "K01098",
+    "K01106",
+    "K01715",
+    "K01763",
+    "K01846",
+    "K02264",
+    "K02396",
+    "K02937",
+    "K03280",
+    "K03902"
+   ]
+  },
+  {
+   "id": "F54",
+   "kind": "request",
+   "text": "Feature request (12 comments): \"Should add a better battery saver mode\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "K00068",
+    "K00134",
+    "K00242",
+    "K00305",
+    "K00831",
+    "K01070",
+    "K01583",
+    "K01667",
+    "K01939",
+    "K02580",
+    "K03284",
+    "K03920"
+   ]
+  },
+  {
+   "id": "F55",
+   "kind": "request",
+   "text": "Feature request (11 comments): \"Give us an option to disable ads\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "K00032",
+    "K00673",
+    "K01134",
+    "K01205",
+    "K01236",
+    "K02059",
+    "K02595",
+    "K02788",
+    "K02904",
+    "K03228",
+    "K03841"
+   ]
+  },
+  {
+   "id": "F56",
+   "kind": "platform",
+   "text": "Negative share by platform: X 43.4% (of 1,407), Instagram 43.7% (of 929), YouTube 46.0% (of 858), Reddit 42.5% (of 414), Facebook 41.2% (of 398).",
+   "topic": "",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F57",
+   "kind": "driver",
+   "text": "Words far more common in negative Battery life comments from 2026-09-23 than before it: v1.2, update, half, software, backup, cut. This shows they happened together, not that one caused the other.",
+   "topic": "Battery life",
+   "alert": false,
+   "comment_ids": [
+    "K00009",
+    "K00031",
+    "K00037",
+    "K00048",
+    "K00053",
+    "K00108",
+    "K00118",
+    "K00133",
+    "K00137",
+    "K00142",
+    "K00145",
+    "K00174",
+    "K00188",
+    "K00196",
+    "K00199",
+    "K00200",
+    "K00211",
+    "K00215",
+    "K00222",
+    "K00226"
+   ]
+  },
+  {
+   "id": "F58",
+   "kind": "quote",
+   "text": "Most engaged negative comments on Battery life: \"Honestly, my battery is swollen and the back cover is lifting\" (engagement 180); \"battery drains way too fast\" (engagement 157); \"Ugh, charging port se jalne ki smell aa rahi hai, bahut dangerous hai\" (engagement 128)",
+   "topic": "Battery life",
+   "alert": false,
+   "comment_ids": [
+    "K01734",
+    "K03570",
+    "K02288"
+   ]
+  },
+  {
+   "id": "F59",
+   "kind": "reasons_detail",
+   "text": "Reasons for negative comments on Battery life: \"update ruined battery life\" (115); \"battery drains too fast\" (98); \"battery is terrible after update\" (67); \"battery drains very quickly\" (60); \"poor battery life after update\" (51).",
+   "topic": "Battery life",
+   "alert": false,
+   "comment_ids": [
+    "K00022",
+    "K00039",
+    "K00065",
+    "K00130",
+    "K00003",
+    "K00009",
+    "K00031",
+    "K00075",
+    "K00037",
+    "K00053",
+    "K00118",
+    "K00133",
+    "K00094",
+    "K00104",
+    "K00188",
+    "K00235",
+    "K00108",
+    "K00142",
+    "K00200",
+    "K00313"
+   ]
+  },
+  {
+   "id": "F60",
+   "kind": "platform_topic",
+   "text": "Negative share for Battery life by platform: YouTube 78.9% (of 199), X 77.1% (of 319), Instagram 77.0% (of 209), Facebook 75.2% (of 101), Reddit 73.6% (of 91).",
+   "topic": "Battery life",
+   "alert": false,
+   "comment_ids": []
+  }
+ ],
+ "usage": {
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "calls": 114,
+  "cached_calls": 0,
+  "budget": 200,
+  "tokens_in": 148475,
+  "tokens_out": 119167,
+  "seconds_in_llm": 536.3
+ },
+ "stats": {
+  "grounding_failures": 0,
+  "rules_llm_agreement": 0.7595736281089617,
+  "source_counts": {
+   "llm": 2533
+  }
+ },
+ "removed_claims": 0,
+ "input": {
+  "rows": 4200,
+  "text_col": "comment_text",
+  "id_col": "comment_id",
+  "platform_col": "platform",
+  "time_col": "created_at",
+  "author_col": "author",
+  "engagement_cols": [
+   "likes",
+   "shares"
+  ],
+  "repaired_rows": 0,
+  "duplicate_ids": 0,
+  "cut_long_comments": 0,
+  "dates_parsed": 0.989
+ },
+ "topics": [
+  {
+   "topic": "Battery life",
+   "count": 933,
+   "share": 23.0,
+   "negative": 716,
+   "positive": 139,
+   "neutral": 78,
+   "neg_share": 76.7,
+   "pos_share": 14.9,
+   "impact": 1392.5,
+   "trend": "steady"
+  },
+  {
+   "topic": "Delivery status",
+   "count": 375,
+   "share": 9.3,
+   "negative": 215,
+   "positive": 69,
+   "neutral": 91,
+   "neg_share": 57.3,
+   "pos_share": 18.4,
+   "impact": 418.9,
+   "trend": "falling"
+  },
+  {
+   "topic": "General impression",
+   "count": 662,
+   "share": 16.3,
+   "negative": 212,
+   "positive": 392,
+   "neutral": 58,
+   "neg_share": 32.0,
+   "pos_share": 59.2,
+   "impact": 413.9,
+   "trend": "falling"
+  },
+  {
+   "topic": "Customer service",
+   "count": 297,
+   "share": 7.3,
+   "negative": 200,
+   "positive": 27,
+   "neutral": 70,
+   "neg_share": 67.3,
+   "pos_share": 9.1,
+   "impact": 372.1,
+   "trend": "falling"
+  },
+  {
+   "topic": "Other",
+   "count": 486,
+   "share": 12.0,
+   "negative": 137,
+   "positive": 18,
+   "neutral": 331,
+   "neg_share": 28.2,
+   "pos_share": 3.7,
+   "impact": 291.0,
+   "trend": "falling"
+  },
+  {
+   "topic": "General opinion",
+   "count": 255,
+   "share": 6.3,
+   "negative": 94,
+   "positive": 110,
+   "neutral": 51,
+   "neg_share": 36.9,
+   "pos_share": 43.1,
+   "impact": 181.3,
+   "trend": "falling"
+  },
+  {
+   "topic": "Phone design",
+   "count": 318,
+   "share": 7.8,
+   "negative": 86,
+   "positive": 164,
+   "neutral": 68,
+   "neg_share": 27.0,
+   "pos_share": 51.6,
+   "impact": 171.8,
+   "trend": "falling"
+  },
+  {
+   "topic": "Camera quality",
+   "count": 553,
+   "share": 13.6,
+   "negative": 65,
+   "positive": 377,
+   "neutral": 111,
+   "neg_share": 11.8,
+   "pos_share": 68.2,
+   "impact": 124.8,
+   "trend": "falling"
+  },
+  {
+   "topic": "Launch offer",
+   "count": 125,
+   "share": 3.1,
+   "negative": 33,
+   "positive": 40,
+   "neutral": 52,
+   "neg_share": 26.4,
+   "pos_share": 32.0,
+   "impact": 66.9,
+   "trend": "falling"
+  },
+  {
+   "topic": "Company support",
+   "count": 50,
+   "share": 1.2,
+   "negative": 18,
+   "positive": 21,
+   "neutral": 11,
+   "neg_share": 36.0,
+   "pos_share": 42.0,
+   "impact": 34.1,
+   "trend": ""
+  }
+ ],
+ "alerts": [
+  {
+   "risk": "safety",
+   "label": "Safety",
+   "count": 38,
+   "doubted": 0,
+   "engagement": 2328.0,
+   "fact": "F8"
+  },
+  {
+   "risk": "legal",
+   "label": "Possible legal or fraud",
+   "count": 16,
+   "doubted": 5,
+   "engagement": 98.0,
+   "fact": "F4"
+  },
+  {
+   "risk": "privacy",
+   "label": "Privacy or security",
+   "count": 7,
+   "doubted": 0,
+   "engagement": 49.0,
+   "fact": "F6"
+  },
+  {
+   "risk": "llm_flagged",
+   "label": "Flagged by the LLM as urgent",
+   "count": 4,
+   "doubted": 0,
+   "engagement": 19.0,
+   "fact": "F5"
+  },
+  {
+   "risk": "reputation",
+   "label": "Reputation",
+   "count": 6,
+   "doubted": 0,
+   "engagement": 18.0,
+   "fact": "F7"
+  }
+ ],
+ "llm_coverage": 1.0,
+ "spikes": [
+  {
+   "topic": "Battery life",
+   "date": "2026-09-23",
+   "before": 16.375,
+   "after": 41.285714285714285,
+   "ratio": 2.5,
+   "fact": "F18",
+   "drivers": [
+    "v1.2",
+    "update",
+    "half",
+    "software",
+    "backup",
+    "cut"
+   ]
+  }
+ ]
+}

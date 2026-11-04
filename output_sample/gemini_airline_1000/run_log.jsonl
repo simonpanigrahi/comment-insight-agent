@@ -1,0 +1,71 @@
+{"t": 0.14, "type": "decision", "step": "ingest", "text": "Read 14,640 rows. Columns detected, text: text, id: tweet_id, time: tweet_created, author: name."}
+{"t": 0.14, "type": "decision", "step": "ingest", "text": "Repairs and limits: 155 repeated ids were made unique."}
+{"t": 0.15, "type": "decision", "step": "ingest", "text": "Using a random sample of 1,000 of the 14,640 rows, as asked."}
+{"t": 0.3, "type": "decision", "step": "clean", "text": "Status of rows: {'ok': 1000}. 996 distinct texts remain, so repeats are labelled once. Languages: {'English': 1000}."}
+{"t": 1.28, "type": "event", "step": "llm", "purpose": "ping", "seconds": 0.98, "tokens_in": 11, "tokens_out": 5, "call": 1, "complete": true}
+{"t": 1.28, "type": "decision", "step": "plan", "text": "LLM 'gemini-3.5-flash-lite' responded. 996 distinct comments at 25 per call need about 40 calls. The budget is 200 calls."}
+{"t": 17.86, "type": "event", "step": "llm", "purpose": "name_topics", "seconds": 10.06, "tokens_in": 1107, "tokens_out": 221, "call": 2, "complete": true}
+{"t": 17.86, "type": "decision", "step": "discover", "text": "Found 9 topics in the data: Flight status, Customer service, Flight cancellations, Fleet, Customer support, Airline experience, Flying experience, Baggage and boarding, Hold times."}
+{"t": 18.1, "type": "decision", "step": "classify", "text": "The budget allows it, so the LLM labels all 996 comments in this step."}
+{"t": 21.65, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.55, "tokens_in": 1481, "tokens_out": 1130, "call": 3, "complete": true}
+{"t": 28.92, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.32, "tokens_in": 1515, "tokens_out": 1148, "call": 4, "complete": true}
+{"t": 42.53, "type": "event", "step": "llm", "purpose": "label", "seconds": 9.42, "tokens_in": 1472, "tokens_out": 1097, "call": 5, "complete": true}
+{"t": 46.02, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.49, "tokens_in": 1428, "tokens_out": 1088, "call": 6, "complete": true}
+{"t": 53.29, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.26, "tokens_in": 1436, "tokens_out": 1107, "call": 7, "complete": true}
+{"t": 65.27, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.74, "tokens_in": 1496, "tokens_out": 1067, "call": 8, "complete": true}
+{"t": 72.54, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.26, "tokens_in": 1431, "tokens_out": 1172, "call": 9, "complete": true}
+{"t": 81.14, "type": "event", "step": "llm", "purpose": "label", "seconds": 8.36, "tokens_in": 1520, "tokens_out": 1080, "call": 10, "complete": true}
+{"t": 84.67, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.53, "tokens_in": 1519, "tokens_out": 1165, "call": 11, "complete": true}
+{"t": 92.35, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.7, "tokens_in": 1533, "tokens_out": 1151, "call": 12, "complete": true}
+{"t": 106.34, "type": "event", "step": "llm", "purpose": "label", "seconds": 10.19, "tokens_in": 1480, "tokens_out": 1099, "call": 13, "complete": true}
+{"t": 110.4, "type": "event", "step": "llm", "purpose": "label", "seconds": 4.06, "tokens_in": 1497, "tokens_out": 1128, "call": 14, "complete": true}
+{"t": 124.36, "type": "event", "step": "llm", "purpose": "label", "seconds": 10.52, "tokens_in": 1473, "tokens_out": 1100, "call": 15, "complete": true}
+{"t": 127.74, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.37, "tokens_in": 1507, "tokens_out": 1164, "call": 16, "complete": true}
+{"t": 135.11, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.25, "tokens_in": 1497, "tokens_out": 1128, "call": 17, "complete": true}
+{"t": 147.52, "type": "event", "step": "llm", "purpose": "label", "seconds": 8.16, "tokens_in": 1495, "tokens_out": 1086, "call": 18, "complete": true}
+{"t": 156.53, "type": "event", "step": "llm", "purpose": "label", "seconds": 9.0, "tokens_in": 1507, "tokens_out": 1096, "call": 19, "complete": true}
+{"t": 160.09, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.56, "tokens_in": 1509, "tokens_out": 1210, "call": 20, "complete": true}
+{"t": 167.77, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.74, "tokens_in": 1534, "tokens_out": 1142, "call": 21, "complete": true}
+{"t": 179.45, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.91, "tokens_in": 1510, "tokens_out": 1126, "call": 22, "complete": true}
+{"t": 182.62, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.17, "tokens_in": 1579, "tokens_out": 1093, "call": 23, "complete": true}
+{"t": 190.2, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.24, "tokens_in": 1491, "tokens_out": 1103, "call": 24, "complete": true}
+{"t": 203.31, "type": "event", "step": "llm", "purpose": "label", "seconds": 8.85, "tokens_in": 1464, "tokens_out": 1118, "call": 25, "complete": true}
+{"t": 206.57, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.26, "tokens_in": 1532, "tokens_out": 1125, "call": 26, "complete": true}
+{"t": 214.47, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.66, "tokens_in": 1516, "tokens_out": 1069, "call": 27, "complete": true}
+{"t": 221.74, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.43, "tokens_in": 1455, "tokens_out": 1179, "call": 28, "complete": true}
+{"t": 228.91, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.09, "tokens_in": 1394, "tokens_out": 1083, "call": 29, "complete": true}
+{"t": 236.59, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.27, "tokens_in": 1502, "tokens_out": 1146, "call": 30, "complete": true}
+{"t": 244.15, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.34, "tokens_in": 1442, "tokens_out": 1123, "call": 31, "complete": true}
+{"t": 255.84, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.52, "tokens_in": 1466, "tokens_out": 1105, "call": 32, "complete": true}
+{"t": 265.05, "type": "event", "step": "llm", "purpose": "label", "seconds": 9.21, "tokens_in": 1483, "tokens_out": 1119, "call": 33, "complete": true}
+{"t": 273.14, "type": "event", "step": "llm", "purpose": "label", "seconds": 8.09, "tokens_in": 1558, "tokens_out": 1497, "call": 34, "complete": true}
+{"t": 281.69, "type": "event", "step": "llm", "purpose": "label", "seconds": 8.54, "tokens_in": 1536, "tokens_out": 1099, "call": 35, "complete": true}
+{"t": 289.63, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.93, "tokens_in": 1484, "tokens_out": 1093, "call": 36, "complete": true}
+{"t": 293.11, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.48, "tokens_in": 1516, "tokens_out": 1158, "call": 37, "complete": true}
+{"t": 300.69, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.55, "tokens_in": 1498, "tokens_out": 1139, "call": 38, "complete": true}
+{"t": 308.16, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.53, "tokens_in": 1515, "tokens_out": 1125, "call": 39, "complete": true}
+{"t": 315.84, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.71, "tokens_in": 1509, "tokens_out": 1112, "call": 40, "complete": true}
+{"t": 330.38, "type": "event", "step": "llm", "purpose": "label", "seconds": 10.75, "tokens_in": 1487, "tokens_out": 1125, "call": 41, "complete": true}
+{"t": 333.36, "type": "event", "step": "llm", "purpose": "label", "seconds": 2.97, "tokens_in": 1349, "tokens_out": 925, "call": 42, "complete": true}
+{"t": 345.3, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.41, "tokens_in": 791, "tokens_out": 262, "call": 43, "complete": true}
+{"t": 345.31, "type": "decision", "step": "check", "text": "12.3% of comments fit no topic. Accepting the topic list."}
+{"t": 346.0, "type": "decision", "step": "analyse", "text": "Computed 47 facts in code. The LLM labelled 99.8% of analysed comments. Alerts: Flagged by the LLM as urgent: 7; Reputation: 1. Spikes: Customer service from 2015-02-23; Baggage and boarding from 2015-02-22; Flight status from 2015-02-20."}
+{"t": 347.18, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 1.18, "tokens_in": 1986, "tokens_out": 56, "call": 44, "complete": true}
+{"t": 347.18, "type": "decision", "step": "investigate", "text": "LLM chose spike_drivers on 'Customer service' (Identify what specific words drove the surge in Customer service negative comments starting around 2015-02-23.). Found: Words far more common in negative Customer service comments from 2015-02-23 than before it: help. This shows they happened together, not that one caused the other."}
+{"t": 354.8, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 1.3, "tokens_in": 2038, "tokens_out": 47, "call": 45, "complete": true}
+{"t": 354.81, "type": "decision", "step": "investigate", "text": "LLM chose spike_drivers on 'Flight status' (Need to identify the specific wording driving the Flight status spike to understand the root cause.). Found: Words far more common in negative Flight status comments from 2015-02-20 than before it: sitting, hours, tarmac. This shows they happened together, not that one caused th"}
+{"t": 362.54, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 1.54, "tokens_in": 2096, "tokens_out": 60, "call": 46, "complete": true}
+{"t": 362.54, "type": "decision", "step": "investigate", "text": "LLM chose spike_drivers on 'Baggage and boarding' (Need to identify the key driver words for the Baggage and boarding spike around 2015-02-22.). Found: Words far more common in negative Baggage and boarding comments from 2015-02-22 than before it: bag, baggage, luggage, help. This shows they happened together, not that o"}
+{"t": 369.81, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 1.31, "tokens_in": 2161, "tokens_out": 44, "call": 47, "complete": true}
+{"t": 369.81, "type": "decision", "step": "investigate", "text": "LLM chose spike_drivers on 'Flight cancellations' (Need to find the spike drivers for Flight cancellations to understand the sudden surge in negative comments around Feb 22.). Found: No spike was found in Flight cancellations."}
+{"t": 377.28, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 1.28, "tokens_in": 2170, "tokens_out": 39, "call": 48, "complete": true}
+{"t": 377.29, "type": "decision", "step": "investigate", "text": "Fixed priority order (the LLM chose spike_drivers on 'Flight cancellations', which is an unknown topic or was already done) chose top_quotes on 'Customer service' (see the comments with the most reach in a high-impact topic). Found: Most engaged negative comments on Customer service: \"Wow unbelievable how you treat your customers at Puerto Rico airport! 👍\" (engagement 9); \"But I got a bad exchange ra"}
+{"t": 384.46, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 0.97, "tokens_in": 2262, "tokens_out": 47, "call": 49, "complete": true}
+{"t": 384.47, "type": "decision", "step": "investigate", "text": "Fixed priority order (the LLM chose spike_drivers on 'Flight cancellations', which is an unknown topic or was already done) chose top_quotes on 'Flight status' (see the comments with the most reach in a high-impact topic). Found: Most engaged negative comments on Flight status: \"r u serious?? 304min delay with AmericanAirlines AA2444 ohio - dallas missed my connecting flight\" (engagement 1); \"cong"}
+{"t": 394.49, "type": "event", "step": "llm", "purpose": "write", "seconds": 3.49, "tokens_in": 2427, "tokens_out": 1217, "call": 50, "complete": true}
+{"t": 394.49, "type": "decision", "step": "write", "text": "LLM wrote draft 1: 6 points, 7 actions."}
+{"t": 394.49, "type": "decision", "step": "verify", "text": "Checker rejected draft 1 with 2 problems. First: action 4 has owner 'Operations'. Choose from: Engineering, Customer Support, Logistics, Marketing, Legal, Product, Leadership."}
+{"t": 401.66, "type": "event", "step": "llm", "purpose": "write", "seconds": 3.16, "tokens_in": 3685, "tokens_out": 1172, "call": 51, "complete": true}
+{"t": 401.66, "type": "decision", "step": "write", "text": "LLM wrote draft 2: 6 points, 7 actions."}
+{"t": 401.66, "type": "decision", "step": "verify", "text": "Checker passed draft 2: every number, date and quote traces back to the facts it cites."}
+{"t": 401.7, "type": "decision", "step": "report", "text": "Report written to output_sample/gemini_airline_1000/report.html"}

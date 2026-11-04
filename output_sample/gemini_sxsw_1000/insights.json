@@ -1,0 +1,529 @@
+{
+ "title": "Product tweets from SXSW 2011",
+ "insights": {
+  "headline": "Customer sentiment across 1,000 analyzed comments shows 6.0% negative, 23.5% positive, and 70.5% neutral.",
+  "headline_fact_ids": [
+   "F2"
+  ],
+  "points": [
+   {
+    "text": "iPhone usage received 136 comments, which is 13.6% of all comments, with 16.2% negative, 26.5% positive, and an impact score of 22.0.",
+    "fact_ids": [
+     "F4"
+    ]
+   },
+   {
+    "text": "The top negative reason in iPhone usage comments includes complaints about iPhone autocorrect and battery with 6 comments.",
+    "fact_ids": [
+     "F10"
+    ]
+   },
+   {
+    "text": "iPad products received 202 comments, representing 20.2% of all comments, with 5.4% negative and 28.2% positive.",
+    "fact_ids": [
+     "F5"
+    ]
+   },
+   {
+    "text": "Apple store received 195 comments, representing 19.5% of all comments, with 5.6% negative and 30.8% positive.",
+    "fact_ids": [
+     "F6"
+    ]
+   },
+   {
+    "text": "Google parties received 200 comments, representing 20.0% of all comments, with 2.5% negative and 18.5% positive.",
+    "fact_ids": [
+     "F7"
+    ]
+   }
+  ],
+  "actions": [
+   {
+    "action": "Investigate complaints about iPhone autocorrect and battery mentioned in 6 comments.",
+    "why": "It is the top negative reason in iPhone usage.",
+    "owner": "Product",
+    "urgency": "today",
+    "fact_ids": [
+     "F10"
+    ]
+   },
+   {
+    "action": "Address app draining iPhone battery via geolocation in background mentioned in negative comments.",
+    "why": "It was cited as a reason for negative comments on iPhone usage.",
+    "owner": "Engineering",
+    "urgency": "today",
+    "fact_ids": [
+     "F27"
+    ]
+   },
+   {
+    "action": "Review Twitter app failure reported in negative comments.",
+    "why": "It was cited as a reason for negative comments on iPhone usage.",
+    "owner": "Engineering",
+    "urgency": "this_week",
+    "fact_ids": [
+     "F27"
+    ]
+   },
+   {
+    "action": "Review freezing screen issues reported in negative comments.",
+    "why": "It was cited as a reason for negative comments on iPhone usage.",
+    "owner": "Engineering",
+    "urgency": "this_week",
+    "fact_ids": [
+     "F27"
+    ]
+   }
+  ]
+ },
+ "facts": [
+  {
+   "id": "F1",
+   "kind": "data",
+   "text": "Received 1,000 comments. Removed nothing. Analysed 1,000 comments, of which 972 are distinct texts. The LLM labelled 100% of the analysed comments.",
+   "topic": "",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F2",
+   "kind": "overall",
+   "text": "Sentiment across 1,000 comments: 6.0% negative (60), 23.5% positive (235), 70.5% neutral (705).",
+   "topic": "",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F3",
+   "kind": "intent",
+   "text": "What people are doing in their comments: other 60.8%, praise 21.3%, question 7.4%, complaint 5.8%, suggestion 2.7%, purchase intent 2.0%.",
+   "topic": "",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F4",
+   "kind": "topic",
+   "text": "iPhone usage: 136 comments (13.6% of all), 16.2% negative, 26.5% positive, impact score 22.0.",
+   "topic": "iPhone usage",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F5",
+   "kind": "topic",
+   "text": "iPad products: 202 comments (20.2% of all), 5.4% negative, 28.2% positive, impact score 11.0.",
+   "topic": "iPad products",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F6",
+   "kind": "topic",
+   "text": "Apple store: 195 comments (19.5% of all), 5.6% negative, 30.8% positive, impact score 11.0.",
+   "topic": "Apple store",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F7",
+   "kind": "topic",
+   "text": "Google parties: 200 comments (20.0% of all), 2.5% negative, 18.5% positive, impact score 5.0.",
+   "topic": "Google parties",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F8",
+   "kind": "topic",
+   "text": "Android apps: 76 comments (7.6% of all), 6.6% negative, 23.7% positive, impact score 5.0.",
+   "topic": "Android apps",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F9",
+   "kind": "topic",
+   "text": "General opinion: 103 comments (10.3% of all), 3.9% negative, 14.6% positive, impact score 4.0.",
+   "topic": "General opinion",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F10",
+   "kind": "reason",
+   "text": "Top negative reason in iPhone usage: \"complains about iPhone autocorrect and battery\" (6 comments).",
+   "topic": "iPhone usage",
+   "alert": false,
+   "comment_ids": [
+    "c748",
+    "c4607",
+    "c3652",
+    "c7778",
+    "c7672",
+    "c2089"
+   ]
+  },
+  {
+   "id": "F11",
+   "kind": "reason",
+   "text": "Top positive reason in iPhone usage: \"likes the iphone app\" (7 comments).",
+   "topic": "iPhone usage",
+   "alert": false,
+   "comment_ids": [
+    "c24",
+    "c19",
+    "c5787",
+    "c6631",
+    "c3865",
+    "c1749",
+    "c3955"
+   ]
+  },
+  {
+   "id": "F12",
+   "kind": "reason",
+   "text": "Top positive reason in iPad products: \"praises iPad UI talk\" (5 comments).",
+   "topic": "iPad products",
+   "alert": false,
+   "comment_ids": [
+    "c3992",
+    "c6070",
+    "c7334",
+    "c2165",
+    "c2266"
+   ]
+  },
+  {
+   "id": "F13",
+   "kind": "reason",
+   "text": "Top negative reason in Apple store: \"complains about traffic caused by the store\" (3 comments).",
+   "topic": "Apple store",
+   "alert": false,
+   "comment_ids": [
+    "c5066",
+    "c1625",
+    "c278"
+   ]
+  },
+  {
+   "id": "F14",
+   "kind": "reason",
+   "text": "Top positive reason in Apple store: \"likes the temporary Apple store\" (9 comments).",
+   "topic": "Apple store",
+   "alert": false,
+   "comment_ids": [
+    "c2614",
+    "c5768",
+    "c3889",
+    "c8173",
+    "c120",
+    "c5646",
+    "c8602",
+    "c7095",
+    "c5434"
+   ]
+  },
+  {
+   "id": "F15",
+   "kind": "reason",
+   "text": "Top positive reason in Google parties: \"enjoyed the Google party last night\" (6 comments).",
+   "topic": "Google parties",
+   "alert": false,
+   "comment_ids": [
+    "c8327",
+    "c2153",
+    "c2406",
+    "c2163",
+    "c1515",
+    "c2659"
+   ]
+  },
+  {
+   "id": "F16",
+   "kind": "reason",
+   "text": "Top positive reason in Android apps: \"excited for new android app\" (3 comments).",
+   "topic": "Android apps",
+   "alert": false,
+   "comment_ids": [
+    "c7871",
+    "c4215",
+    "c3481"
+   ]
+  },
+  {
+   "id": "F17",
+   "kind": "question",
+   "text": "Common question (13 comments): \"Hm? Do we need another 1? RT Google to Launch Major New Social Network Called Circles, Possibly Today sxsw\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "c6023",
+    "c7039",
+    "c7038",
+    "c398",
+    "c6937",
+    "c9032",
+    "c2645",
+    "c5867",
+    "c3473",
+    "c1333",
+    "c2651",
+    "c5082",
+    "c2985"
+   ]
+  },
+  {
+   "id": "F18",
+   "kind": "question",
+   "text": "Common question (10 comments): \"Does the pop up Apple store in Austin still have iPad2 in stock? lazyweb SXSW\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "c155",
+    "c290",
+    "c2717",
+    "c7263",
+    "c5405",
+    "c7272",
+    "c145",
+    "c7429",
+    "c7262",
+    "c1524"
+   ]
+  },
+  {
+   "id": "F19",
+   "kind": "question",
+   "text": "Common question (4 comments): \"iPad therefore I am. What is the line like at the Apple Store near SXSW in Austin? send pics!\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "c7665",
+    "c3008",
+    "c844",
+    "c2532"
+   ]
+  },
+  {
+   "id": "F20",
+   "kind": "question",
+   "text": "Common question (3 comments): \"Looking for an iphone battery solution for next week at SXSW. Any suggestions?\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "c7128",
+    "c9088",
+    "c3850"
+   ]
+  },
+  {
+   "id": "F21",
+   "kind": "question",
+   "text": "Common question (3 comments): \"I wonder if released on a Friday and when sxsw started in order to fly under the radar\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "c3617",
+    "c3519",
+    "c3520"
+   ]
+  },
+  {
+   "id": "F22",
+   "kind": "question",
+   "text": "Common question (2 comments): \"Black or white iPad? sxsw iPad2\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "c8905",
+    "c2586"
+   ]
+  },
+  {
+   "id": "F23",
+   "kind": "request",
+   "text": "Feature request (3 comments): \"If you were able to afford to attend sxsw or buy an iPad today, consider saving a few $$$ for Japan earthquake relief. J\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "c6106",
+    "c6327",
+    "c6105"
+   ]
+  },
+  {
+   "id": "F24",
+   "kind": "request",
+   "text": "Feature request (2 comments): \"SXSW Tip 2 Use your smartphone's Google Maps App when you land in Austin to find the next $1 bus downtown. :)\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "c1676",
+    "c744"
+   ]
+  },
+  {
+   "id": "F25",
+   "kind": "request",
+   "text": "Feature request (2 comments): \"Hope its filtering will be intuitive (via Google to Launch Major New Social Network Called Circles... sxsw\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "c3162",
+    "c2037"
+   ]
+  },
+  {
+   "id": "F26",
+   "kind": "request",
+   "text": "Feature request (2 comments): \"pubcamp kirkus sxsw download Qrank on your ipad/iphone before you come to pubcamp sxsw 2011 - prizes!\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "c1692",
+    "c1691"
+   ]
+  },
+  {
+   "id": "F27",
+   "kind": "reasons_detail",
+   "text": "Reasons for negative comments on iPhone usage: \"complains about iPhone autocorrect and battery\" (6); \"frustrated with Twitter app failure\" (2); \"app drains iPhone battery via geolocation in background\" (2); \"freezing screen issues\" (1); \"phone struggling under stress at event\" (1).",
+   "topic": "iPhone usage",
+   "alert": false,
+   "comment_ids": [
+    "c748",
+    "c4607",
+    "c3652",
+    "c7778",
+    "c7194",
+    "c6361",
+    "c5740",
+    "c6052",
+    "c1653",
+    "c723"
+   ]
+  }
+ ],
+ "usage": {
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "calls": 48,
+  "cached_calls": 0,
+  "budget": 200,
+  "tokens_in": 69564,
+  "tokens_out": 48031,
+  "seconds_in_llm": 847.0
+ },
+ "stats": {
+  "grounding_failures": 0,
+  "rules_llm_agreement": 0.5761316872427984,
+  "source_counts": {
+   "llm": 972
+  }
+ },
+ "removed_claims": 0,
+ "input": {
+  "rows": 9093,
+  "text_col": "tweet_text",
+  "id_col": null,
+  "platform_col": null,
+  "time_col": null,
+  "author_col": null,
+  "engagement_cols": [],
+  "repaired_rows": 0,
+  "duplicate_ids": 0,
+  "cut_long_comments": 0,
+  "dates_parsed": null,
+  "sampled_from": 9093
+ },
+ "topics": [
+  {
+   "topic": "iPhone usage",
+   "count": 136,
+   "share": 13.6,
+   "negative": 22,
+   "positive": 36,
+   "neutral": 78,
+   "neg_share": 16.2,
+   "pos_share": 26.5,
+   "impact": 22.0,
+   "trend": ""
+  },
+  {
+   "topic": "iPad products",
+   "count": 202,
+   "share": 20.2,
+   "negative": 11,
+   "positive": 57,
+   "neutral": 134,
+   "neg_share": 5.4,
+   "pos_share": 28.2,
+   "impact": 11.0,
+   "trend": ""
+  },
+  {
+   "topic": "Apple store",
+   "count": 195,
+   "share": 19.5,
+   "negative": 11,
+   "positive": 60,
+   "neutral": 124,
+   "neg_share": 5.6,
+   "pos_share": 30.8,
+   "impact": 11.0,
+   "trend": ""
+  },
+  {
+   "topic": "Google parties",
+   "count": 200,
+   "share": 20.0,
+   "negative": 5,
+   "positive": 37,
+   "neutral": 158,
+   "neg_share": 2.5,
+   "pos_share": 18.5,
+   "impact": 5.0,
+   "trend": ""
+  },
+  {
+   "topic": "Android apps",
+   "count": 76,
+   "share": 7.6,
+   "negative": 5,
+   "positive": 18,
+   "neutral": 53,
+   "neg_share": 6.6,
+   "pos_share": 23.7,
+   "impact": 5.0,
+   "trend": ""
+  },
+  {
+   "topic": "General opinion",
+   "count": 103,
+   "share": 10.3,
+   "negative": 4,
+   "positive": 15,
+   "neutral": 84,
+   "neg_share": 3.9,
+   "pos_share": 14.6,
+   "impact": 4.0,
+   "trend": ""
+  },
+  {
+   "topic": "Other",
+   "count": 88,
+   "share": 8.8,
+   "negative": 2,
+   "positive": 12,
+   "neutral": 74,
+   "neg_share": 2.3,
+   "pos_share": 13.6,
+   "impact": 2.0,
+   "trend": ""
+  }
+ ],
+ "alerts": [],
+ "llm_coverage": 1.0,
+ "spikes": []
+}

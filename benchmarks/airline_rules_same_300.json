@@ -1,0 +1,7 @@
+{
+ "name": "airline rules same 300",
+ "rows": 300,
+ "accuracy": 0.623,
+ "macro_f1": 0.582,
+ "majority_baseline": 0.59
+}

@@ -1,0 +1,7 @@
+{
+ "name": "airline vader raw",
+ "rows": 14640,
+ "accuracy": 0.49,
+ "macro_f1": 0.457,
+ "majority_baseline": 0.627
+}

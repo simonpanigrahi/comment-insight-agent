@@ -1,0 +1,977 @@
+{
+ "title": "US airline tweets, February 2015",
+ "insights": {
+  "headline": "Sentiment analysis across 1,000 comments shows 55.1% negative comments, with negative comments rising in 6 topics starting around 2015-02-22.",
+  "headline_fact_ids": [
+   "F2",
+   "F22"
+  ],
+  "points": [
+   {
+    "text": "Sentiment across 1,000 comments includes 55.1% negative (551), 15.9% positive (159), and 29.0% neutral (290), with complaints making up 53.9% of what people are doing in their comments.",
+    "fact_ids": [
+     "F2",
+     "F3"
+    ]
+   },
+   {
+    "text": "Negative comments rose in 6 topics at about the same time starting around 2015-02-22, indicating a wider event may be behind this rather than separate problems in each topic.",
+    "fact_ids": [
+     "F22"
+    ]
+   },
+   {
+    "text": "Customer service negative comments rose from about 9.2 per day to about 27.5 per day from 2015-02-23, and Flight status negative comments rose from about 4.3 per day to about 13.4 per day from 2015-02-20.",
+    "fact_ids": [
+     "F16",
+     "F17"
+    ]
+   },
+   {
+    "text": "Baggage and boarding negative comments rose from about 5.8 per day to about 16.7 per day from 2015-02-22, and Flight cancellations negative comments rose from about 4.0 per day to about 10.7 per day from 2015-02-22.",
+    "fact_ids": [
+     "F18",
+     "F19"
+    ]
+   },
+   {
+    "text": "Hold times negative comments rose from about 1.8 per day to about 9.8 per day from 2015-02-21, and Customer support negative comments rose from about 2.3 per day to about 8.0 per day from 2015-02-23.",
+    "fact_ids": [
+     "F20",
+     "F21"
+    ]
+   },
+   {
+    "text": "Flagged by the LLM as urgent reports are 7 comments with total engagement 0 and first seen 2015-02-19.",
+    "fact_ids": [
+     "F4"
+    ]
+   }
+  ],
+  "actions": [
+   {
+    "action": "Review urgent reports flagged by the LLM",
+    "why": "Flagged by the LLM as urgent reports: 7 comments. Total engagement 0. First seen 2015-02-19.",
+    "owner": "Customer Support",
+    "urgency": "today",
+    "fact_ids": [
+     "F4"
+    ]
+   },
+   {
+    "action": "Investigate the wider event behind the simultaneous rise of negative comments in 6 topics starting around 2015-02-22",
+    "why": "Negative comments rose in 6 topics at about the same time, starting around 2015-02-22. A wider event may be behind this, rather than separate problems in each topic.",
+    "owner": "Leadership",
+    "urgency": "this_week",
+    "fact_ids": [
+     "F22"
+    ]
+   },
+   {
+    "action": "Address the spike in Customer service negative comments from about 9.2 per day to about 27.5 per day from 2015-02-23",
+    "why": "Spike in Customer service: negative comments rose from about 9.2 per day to about 27.5 per day from 2015-02-23.",
+    "owner": "Customer Support",
+    "urgency": "this_week",
+    "fact_ids": [
+     "F16"
+    ]
+   },
+   {
+    "action": "Address the spike in Flight status negative comments from about 4.3 per day to about 13.4 per day from 2015-02-20",
+    "why": "Spike in Flight status: negative comments rose from about 4.3 per day to about 13.4 per day from 2015-02-20.",
+    "owner": "Logistics",
+    "urgency": "this_week",
+    "fact_ids": [
+     "F17"
+    ]
+   },
+   {
+    "action": "Address the spike in Baggage and boarding negative comments from about 5.8 per day to about 16.7 per day from 2015-02-22",
+    "why": "Spike in Baggage and boarding: negative comments rose from about 5.8 per day to about 16.7 per day from 2015-02-22.",
+    "owner": "Logistics",
+    "urgency": "this_week",
+    "fact_ids": [
+     "F18"
+    ]
+   },
+   {
+    "action": "Address the spike in Flight cancellations negative comments from about 4.0 per day to about 10.7 per day from 2015-02-22",
+    "why": "Spike in Flight cancellations: negative comments rose from about 4.0 per day to about 10.7 per day from 2015-02-22.",
+    "owner": "Logistics",
+    "urgency": "this_week",
+    "fact_ids": [
+     "F19"
+    ]
+   },
+   {
+    "action": "Address the spike in Hold times negative comments from about 1.8 per day to about 9.8 per day from 2015-02-21",
+    "why": "Spike in Hold times: negative comments rose from about 1.8 per day to about 9.8 per day from 2015-02-21.",
+    "owner": "Customer Support",
+    "urgency": "this_week",
+    "fact_ids": [
+     "F20"
+    ]
+   }
+  ]
+ },
+ "facts": [
+  {
+   "id": "F1",
+   "kind": "data",
+   "text": "Received 1,000 comments. Removed nothing. Analysed 1,000 comments, of which 996 are distinct texts. The LLM labelled 99.8% of the analysed comments.",
+   "topic": "",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F2",
+   "kind": "overall",
+   "text": "Sentiment across 1,000 comments: 55.1% negative (551), 15.9% positive (159), 29.0% neutral (290).",
+   "topic": "",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F3",
+   "kind": "intent",
+   "text": "What people are doing in their comments: complaint 53.9%, praise 15.4%, question 14.3%, other 13.8%, suggestion 2.0%, purchase intent 0.6%.",
+   "topic": "",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F4",
+   "kind": "alert",
+   "text": "Flagged by the LLM as urgent reports: 7 comments. Total engagement 0. First seen 2015-02-19.",
+   "topic": "",
+   "alert": true,
+   "comment_ids": [
+    "568441899402584064",
+    "569786809028255744",
+    "568492016587436033",
+    "569620850820956160",
+    "569231858485080066",
+    "570278644918194176#2",
+    "569687291007881216"
+   ]
+  },
+  {
+   "id": "F5",
+   "kind": "alert",
+   "text": "Reputation reports: 1 comment. Total engagement 0. First seen 2015-02-22.",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "569548841361412096"
+   ]
+  },
+  {
+   "id": "F6",
+   "kind": "topic",
+   "text": "Customer service: 188 comments (18.8% of all), 58.5% negative, 23.9% positive, impact score 119.8. Negative comments are rising.",
+   "topic": "Customer service",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F7",
+   "kind": "topic",
+   "text": "Flight status: 148 comments (14.8% of all), 54.1% negative, 2.7% positive, impact score 81.7. Negative comments are rising.",
+   "topic": "Flight status",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F8",
+   "kind": "topic",
+   "text": "Baggage and boarding: 109 comments (10.9% of all), 72.5% negative, 6.4% positive, impact score 81.1. Negative comments are rising.",
+   "topic": "Baggage and boarding",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F9",
+   "kind": "topic",
+   "text": "Airline experience: 131 comments (13.1% of all), 55.0% negative, 35.1% positive, impact score 75.7. Negative comments are rising.",
+   "topic": "Airline experience",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F10",
+   "kind": "topic",
+   "text": "Flight cancellations: 59 comments (5.9% of all), 88.1% negative, 1.7% positive, impact score 54.9. Negative comments are rising.",
+   "topic": "Flight cancellations",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F11",
+   "kind": "topic",
+   "text": "Hold times: 48 comments (4.8% of all), 95.8% negative, 0.0% positive, impact score 47.7. Negative comments are rising.",
+   "topic": "Hold times",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F12",
+   "kind": "topic",
+   "text": "Customer support: 67 comments (6.7% of all), 44.8% negative, 16.4% positive, impact score 30.8. Negative comments are rising.",
+   "topic": "Customer support",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F13",
+   "kind": "topic",
+   "text": "Flying experience: 51 comments (5.1% of all), 41.2% negative, 37.3% positive, impact score 21.0. Negative comments are rising.",
+   "topic": "Flying experience",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F14",
+   "kind": "topic",
+   "text": "Fleet: 32 comments (3.2% of all), 34.4% negative, 15.6% positive, impact score 11.0.",
+   "topic": "Fleet",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F15",
+   "kind": "topic",
+   "text": "General opinion: 44 comments (4.4% of all), 20.5% negative, 34.1% positive, impact score 9.0.",
+   "topic": "General opinion",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F16",
+   "kind": "spike",
+   "text": "Spike in Customer service: negative comments rose from about 9.2 per day to about 27.5 per day from 2015-02-23 (3.0 times).",
+   "topic": "Customer service",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F17",
+   "kind": "spike",
+   "text": "Spike in Flight status: negative comments rose from about 4.3 per day to about 13.4 per day from 2015-02-20 (3.1 times).",
+   "topic": "Flight status",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F18",
+   "kind": "spike",
+   "text": "Spike in Baggage and boarding: negative comments rose from about 5.8 per day to about 16.7 per day from 2015-02-22 (2.9 times).",
+   "topic": "Baggage and boarding",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F19",
+   "kind": "spike",
+   "text": "Spike in Flight cancellations: negative comments rose from about 4.0 per day to about 10.7 per day from 2015-02-22 (2.7 times).",
+   "topic": "Flight cancellations",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F20",
+   "kind": "spike",
+   "text": "Spike in Hold times: negative comments rose from about 1.8 per day to about 9.8 per day from 2015-02-21 (5.6 times).",
+   "topic": "Hold times",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F21",
+   "kind": "spike",
+   "text": "Spike in Customer support: negative comments rose from about 2.3 per day to about 8.0 per day from 2015-02-23 (3.4 times).",
+   "topic": "Customer support",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F22",
+   "kind": "surge",
+   "text": "Negative comments rose in 6 topics at about the same time, starting around 2015-02-22. A wider event may be behind this, rather than separate problems in each topic.",
+   "topic": "",
+   "alert": false,
+   "comment_ids": []
+  },
+  {
+   "id": "F23",
+   "kind": "reason",
+   "text": "Top negative reason in Customer service: \"rude customer service\" (16 comments).",
+   "topic": "Customer service",
+   "alert": false,
+   "comment_ids": [
+    "568984098909237248",
+    "569938487920566272",
+    "569577771292237824",
+    "569991606385967107",
+    "570308309682675712#2",
+    "567728533771132928",
+    "568634467587264512",
+    "569810057795391488",
+    "567767738886545408",
+    "568244170848137217",
+    "569858507341606912",
+    "568397140977979392",
+    "569734884396302338",
+    "569639294152806400",
+    "568902419972694016",
+    "570048188830216192"
+   ]
+  },
+  {
+   "id": "F24",
+   "kind": "reason",
+   "text": "Top negative reason in Customer service: \"complains about unhelpful worker response\" (5 comments).",
+   "topic": "Customer service",
+   "alert": false,
+   "comment_ids": [
+    "569710627649761282",
+    "570193870769811456",
+    "569638470538301442",
+    "569594026732740609",
+    "569289545058947072"
+   ]
+  },
+  {
+   "id": "F25",
+   "kind": "reason",
+   "text": "Top positive reason in Customer service: \"praises customer service and rates\" (10 comments).",
+   "topic": "Customer service",
+   "alert": false,
+   "comment_ids": [
+    "569006801192161280",
+    "567755891714174976",
+    "570271904508092416",
+    "567844362601697280",
+    "568625749214642176",
+    "568786745715757056",
+    "568940981321637889",
+    "568983310438805505",
+    "568463331251634176",
+    "569513151517073408"
+   ]
+  },
+  {
+   "id": "F26",
+   "kind": "reason",
+   "text": "Top negative reason in Flight status: \"long delay and missed connecting flight\" (8 comments).",
+   "topic": "Flight status",
+   "alert": false,
+   "comment_ids": [
+    "570301395141836801#2",
+    "569188782492266496",
+    "569880322487263232",
+    "567822613608718336",
+    "567861727833894913",
+    "569909908738580481",
+    "567774229249421312",
+    "569077766022246400"
+   ]
+  },
+  {
+   "id": "F27",
+   "kind": "reason",
+   "text": "Top negative reason in Flight status: \"frustrated with seat changes\" (6 comments).",
+   "topic": "Flight status",
+   "alert": false,
+   "comment_ids": [
+    "568454157478326272",
+    "569509520034156544",
+    "569662132582621184",
+    "568782732358258689",
+    "569668051764969474",
+    "567739149818413056"
+   ]
+  },
+  {
+   "id": "F28",
+   "kind": "reason",
+   "text": "Top negative reason in Baggage and boarding: \"lost baggage during flight\" (5 comments).",
+   "topic": "Baggage and boarding",
+   "alert": false,
+   "comment_ids": [
+    "569457148129779714",
+    "569691100090273792",
+    "569640446999203842",
+    "570085448271335424",
+    "569317747101982720"
+   ]
+  },
+  {
+   "id": "F29",
+   "kind": "reason",
+   "text": "Top negative reason in Baggage and boarding: \"waiting for baggage reload with no AC\" (5 comments).",
+   "topic": "Baggage and boarding",
+   "alert": false,
+   "comment_ids": [
+    "567899634833690624",
+    "568201002731622400",
+    "569825936788598786",
+    "569566673235271680",
+    "569353641615687680"
+   ]
+  },
+  {
+   "id": "F30",
+   "kind": "reason",
+   "text": "Top negative reason in Airline experience: \"worst customer experience in Miami\" (5 comments).",
+   "topic": "Airline experience",
+   "alert": false,
+   "comment_ids": [
+    "569852657327738880",
+    "568434014672916480",
+    "568725291247525888",
+    "570078102551834624",
+    "569247029446119424"
+   ]
+  },
+  {
+   "id": "F31",
+   "kind": "reason",
+   "text": "Top negative reason in Airline experience: \"extremely angry with operations failure\" (4 comments).",
+   "topic": "Airline experience",
+   "alert": false,
+   "comment_ids": [
+    "569274801388425217",
+    "568490860901478400",
+    "570066859330019329",
+    "568202255205335041"
+   ]
+  },
+  {
+   "id": "F32",
+   "kind": "reason",
+   "text": "Top positive reason in Airline experience: \"loves the airline brand\" (6 comments).",
+   "topic": "Airline experience",
+   "alert": false,
+   "comment_ids": [
+    "570298411582394368",
+    "570012257549070337",
+    "567813046811525120",
+    "569623948767268864",
+    "568556148368019456",
+    "568442965661761536"
+   ]
+  },
+  {
+   "id": "F33",
+   "kind": "reason",
+   "text": "Top negative reason in Flight cancellations: \"angry about flight cancellations with no reason\" (5 comments).",
+   "topic": "Flight cancellations",
+   "alert": false,
+   "comment_ids": [
+    "567879304593408001",
+    "570146467542933505",
+    "570203218686423041",
+    "569713615047168000",
+    "568636973964898305"
+   ]
+  },
+  {
+   "id": "F34",
+   "kind": "reason",
+   "text": "Top negative reason in Flight cancellations: \"flight cancelled and long hold time\" (5 comments).",
+   "topic": "Flight cancellations",
+   "alert": false,
+   "comment_ids": [
+    "569176969872605184",
+    "570280378193330180",
+    "569361107745263617",
+    "569567144318365696",
+    "569660501526859776"
+   ]
+  },
+  {
+   "id": "F35",
+   "kind": "reason",
+   "text": "Top negative reason in Hold times: \"long hold time and unable to change flight\" (6 comments).",
+   "topic": "Hold times",
+   "alert": false,
+   "comment_ids": [
+    "569286897404669953",
+    "568974120030875648",
+    "569527440499978240",
+    "569952285024915456",
+    "570276440874323968",
+    "569342508553121795"
+   ]
+  },
+  {
+   "id": "F36",
+   "kind": "reason",
+   "text": "Top negative reason in Hold times: \"extremely long hold times and cancelled flight\" (5 comments).",
+   "topic": "Hold times",
+   "alert": false,
+   "comment_ids": [
+    "569483987564961792",
+    "569168515674058752",
+    "569692664720797696",
+    "569203705750237184",
+    "569652478020489216"
+   ]
+  },
+  {
+   "id": "F37",
+   "kind": "reason",
+   "text": "Top negative reason in Customer support: \"frustrated by lack of customer support response\" (4 comments).",
+   "topic": "Customer support",
+   "alert": false,
+   "comment_ids": [
+    "569900705852608513",
+    "569824422279950336",
+    "570054360505323520",
+    "569851952282112000"
+   ]
+  },
+  {
+   "id": "F38",
+   "kind": "reason",
+   "text": "Top positive reason in Customer support: \"appreciates a quick unexpected reply\" (3 comments).",
+   "topic": "Customer support",
+   "alert": false,
+   "comment_ids": [
+    "569522923029041153",
+    "568866106317746176",
+    "567870895383015424"
+   ]
+  },
+  {
+   "id": "F39",
+   "kind": "reason",
+   "text": "Top negative reason in Flying experience: \"stuck on plane longer than flight\" (5 comments).",
+   "topic": "Flying experience",
+   "alert": false,
+   "comment_ids": [
+    "567756556536909825",
+    "569691772000931840",
+    "568069670475071488",
+    "569153491983327232",
+    "568385277514919937"
+   ]
+  },
+  {
+   "id": "F40",
+   "kind": "reason",
+   "text": "Top positive reason in Flying experience: \"had an awesome flight experience\" (3 comments).",
+   "topic": "Flying experience",
+   "alert": false,
+   "comment_ids": [
+    "570271064141352960",
+    "569596394819883008",
+    "570244951914782721"
+   ]
+  },
+  {
+   "id": "F41",
+   "kind": "question",
+   "text": "Common question (7 comments): \"I have been trying to speak with an agent the whole day about my Cancelled Flightled flight, what I can do?\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "569692982955237377",
+    "567869191002263553",
+    "569217929541238784",
+    "570040888321318912",
+    "567752230111936512",
+    "569820671234060288",
+    "569732355067244545"
+   ]
+  },
+  {
+   "id": "F42",
+   "kind": "question",
+   "text": "Common question (5 comments): \"did you pick the winners for the DestinationDragons ?? 87yearsLate Flightr maybeijustlost whyyounoloveme\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "568141111601926145",
+    "568578057293807616",
+    "568892942770786304",
+    "568881291766034432",
+    "568942133698146306"
+   ]
+  },
+  {
+   "id": "F43",
+   "kind": "question",
+   "text": "Common question (4 comments): \"I'm flying out of CUN tomorrow To DEN - can I change my flight due to the travel advisory??\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "569685746723848193",
+    "568483098310152193",
+    "568883598281076738",
+    "570287318264905729"
+   ]
+  },
+  {
+   "id": "F44",
+   "kind": "question",
+   "text": "Common question (3 comments): \"👍👍✈️✈️💗 When are you guys going to start flying to Paris? : You're welcome.'\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "568890062286385153",
+    "568265552583479296",
+    "569615540089700353"
+   ]
+  },
+  {
+   "id": "F45",
+   "kind": "question",
+   "text": "Common question (3 comments): \"Who can I contact about requesting a charity donation? ThankYou\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "568793902267936769",
+    "568793782164062208",
+    "567772685472915456"
+   ]
+  },
+  {
+   "id": "F46",
+   "kind": "question",
+   "text": "Common question (3 comments): \"why aren't twitter and reservations connected? What do people want? Reservations, duh?!?!\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "568039498015223808",
+    "569946477356818432",
+    "570135557151580160"
+   ]
+  },
+  {
+   "id": "F47",
+   "kind": "request",
+   "text": "Feature request (2 comments): \"can you ask your guys with flight 1146 to BWI to wait for us to get off a delayed flight from San Diego? Pretty please?\"",
+   "topic": "",
+   "alert": false,
+   "comment_ids": [
+    "570079699595980802",
+    "569872444590129152"
+   ]
+  },
+  {
+   "id": "F48",
+   "kind": "driver",
+   "text": "Words far more common in negative Customer service comments from 2015-02-23 than before it: help. This shows they happened together, not that one caused the other.",
+   "topic": "Customer service",
+   "alert": false,
+   "comment_ids": [
+    "569673758501412865",
+    "569944281512685570#2",
+    "569959393917149189",
+    "569659173044129792",
+    "570023318251642883",
+    "569710019333107714",
+    "569968904409214976",
+    "569676217432977408"
+   ]
+  },
+  {
+   "id": "F49",
+   "kind": "driver",
+   "text": "Words far more common in negative Flight status comments from 2015-02-20 than before it: sitting, hours, tarmac. This shows they happened together, not that one caused the other.",
+   "topic": "Flight status",
+   "alert": false,
+   "comment_ids": [
+    "569341255399964672",
+    "570051265373171712",
+    "569124496990466051",
+    "569231300843970561",
+    "569235155061227520",
+    "569903840507506688",
+    "568604735772741632"
+   ]
+  },
+  {
+   "id": "F50",
+   "kind": "driver",
+   "text": "Words far more common in negative Baggage and boarding comments from 2015-02-22 than before it: bag, baggage, luggage, help. This shows they happened together, not that one caused the other.",
+   "topic": "Baggage and boarding",
+   "alert": false,
+   "comment_ids": [
+    "570275010759102466#2",
+    "569603875671396352",
+    "569457148129779714",
+    "569314535103983617",
+    "569772113378217984",
+    "569353230007664640",
+    "570274417546113025",
+    "570179562174328832",
+    "569431307152953344",
+    "570085448271335424",
+    "569477692166316033",
+    "569908722778157056",
+    "570205088595058688",
+    "569857624549625856",
+    "569324719993827329",
+    "569610893052518400",
+    "569693592597323776",
+    "569852084536750080",
+    "569317747101982720",
+    "569959876706885632"
+   ]
+  },
+  {
+   "id": "F51",
+   "kind": "quote",
+   "text": "Most engaged negative comments on Customer service: \"Wow unbelievable how you treat your customers at Puerto Rico airport! 👍\" (engagement 9); \"But I got a bad exchange rate so want my money back. Please can you refund without penalty.\" (engagement 7); \"your worker told us not to call because we'd be talking to someone in Thailand...\" (engagement 1)",
+   "topic": "Customer service",
+   "alert": false,
+   "comment_ids": [
+    "569930199036497920",
+    "567805339790475264",
+    "569710627649761282"
+   ]
+  },
+  {
+   "id": "F52",
+   "kind": "quote",
+   "text": "Most engaged negative comments on Flight status: \"r u serious?? 304min delay with AmericanAirlines AA2444 ohio - dallas missed my connecting flight\" (engagement 1); \"congratulations united. Fail again. Sky at a gate with a plane full of people waiting on 2. Weather gets worse now we can't leave.\" (engagement 1); \"5.5 hours Late Flightr I've been in transit for a total of twelve hours...please just change the plane on flight 600 this is ridiculous SFO\" (engagement 1)",
+   "topic": "Flight status",
+   "alert": false,
+   "comment_ids": [
+    "570301395141836801#2",
+    "569296356143050754",
+    "568911315026063361"
+   ]
+  }
+ ],
+ "usage": {
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "calls": 51,
+  "cached_calls": 0,
+  "budget": 200,
+  "tokens_in": 80350,
+  "tokens_out": 48190,
+  "seconds_in_llm": 254.6
+ },
+ "stats": {
+  "grounding_failures": 0,
+  "rules_llm_agreement": 0.6398390342052314,
+  "source_counts": {
+   "llm": 994,
+   "rules": 2
+  }
+ },
+ "removed_claims": 0,
+ "input": {
+  "rows": 14640,
+  "text_col": "text",
+  "id_col": "tweet_id",
+  "platform_col": null,
+  "time_col": "tweet_created",
+  "author_col": "name",
+  "engagement_cols": [
+   "retweet_count"
+  ],
+  "repaired_rows": 0,
+  "duplicate_ids": 155,
+  "cut_long_comments": 0,
+  "dates_parsed": 1.0,
+  "sampled_from": 14640
+ },
+ "topics": [
+  {
+   "topic": "Customer service",
+   "count": 188,
+   "share": 18.8,
+   "negative": 110,
+   "positive": 45,
+   "neutral": 33,
+   "neg_share": 58.5,
+   "pos_share": 23.9,
+   "impact": 119.8,
+   "trend": "rising"
+  },
+  {
+   "topic": "Flight status",
+   "count": 148,
+   "share": 14.8,
+   "negative": 80,
+   "positive": 4,
+   "neutral": 64,
+   "neg_share": 54.1,
+   "pos_share": 2.7,
+   "impact": 81.7,
+   "trend": "rising"
+  },
+  {
+   "topic": "Baggage and boarding",
+   "count": 109,
+   "share": 10.9,
+   "negative": 79,
+   "positive": 7,
+   "neutral": 23,
+   "neg_share": 72.5,
+   "pos_share": 6.4,
+   "impact": 81.1,
+   "trend": "rising"
+  },
+  {
+   "topic": "Airline experience",
+   "count": 131,
+   "share": 13.1,
+   "negative": 72,
+   "positive": 46,
+   "neutral": 13,
+   "neg_share": 55.0,
+   "pos_share": 35.1,
+   "impact": 75.7,
+   "trend": "rising"
+  },
+  {
+   "topic": "Flight cancellations",
+   "count": 59,
+   "share": 5.9,
+   "negative": 52,
+   "positive": 1,
+   "neutral": 6,
+   "neg_share": 88.1,
+   "pos_share": 1.7,
+   "impact": 54.9,
+   "trend": "rising"
+  },
+  {
+   "topic": "Hold times",
+   "count": 48,
+   "share": 4.8,
+   "negative": 46,
+   "positive": 0,
+   "neutral": 2,
+   "neg_share": 95.8,
+   "pos_share": 0.0,
+   "impact": 47.7,
+   "trend": "rising"
+  },
+  {
+   "topic": "Other",
+   "count": 123,
+   "share": 12.3,
+   "negative": 41,
+   "positive": 6,
+   "neutral": 76,
+   "neg_share": 33.3,
+   "pos_share": 4.9,
+   "impact": 41.8,
+   "trend": "falling"
+  },
+  {
+   "topic": "Customer support",
+   "count": 67,
+   "share": 6.7,
+   "negative": 30,
+   "positive": 11,
+   "neutral": 26,
+   "neg_share": 44.8,
+   "pos_share": 16.4,
+   "impact": 30.8,
+   "trend": "rising"
+  },
+  {
+   "topic": "Flying experience",
+   "count": 51,
+   "share": 5.1,
+   "negative": 21,
+   "positive": 19,
+   "neutral": 11,
+   "neg_share": 41.2,
+   "pos_share": 37.3,
+   "impact": 21.0,
+   "trend": "rising"
+  },
+  {
+   "topic": "Fleet",
+   "count": 32,
+   "share": 3.2,
+   "negative": 11,
+   "positive": 5,
+   "neutral": 16,
+   "neg_share": 34.4,
+   "pos_share": 15.6,
+   "impact": 11.0,
+   "trend": ""
+  },
+  {
+   "topic": "General opinion",
+   "count": 44,
+   "share": 4.4,
+   "negative": 9,
+   "positive": 15,
+   "neutral": 20,
+   "neg_share": 20.5,
+   "pos_share": 34.1,
+   "impact": 9.0,
+   "trend": ""
+  }
+ ],
+ "alerts": [
+  {
+   "risk": "llm_flagged",
+   "label": "Flagged by the LLM as urgent",
+   "count": 7,
+   "doubted": 0,
+   "engagement": 0.0,
+   "fact": "F4"
+  },
+  {
+   "risk": "reputation",
+   "label": "Reputation",
+   "count": 1,
+   "doubted": 0,
+   "engagement": 0.0,
+   "fact": "F5"
+  }
+ ],
+ "llm_coverage": 0.998,
+ "spikes": [
+  {
+   "topic": "Customer service",
+   "date": "2015-02-23",
+   "before": 9.166666666666666,
+   "after": 27.5,
+   "ratio": 3.0,
+   "fact": "F16",
+   "drivers": [
+    "help"
+   ]
+  },
+  {
+   "topic": "Baggage and boarding",
+   "date": "2015-02-22",
+   "before": 5.8,
+   "after": 16.666666666666668,
+   "ratio": 2.9,
+   "fact": "F18",
+   "drivers": [
+    "bag",
+    "baggage",
+    "luggage",
+    "help"
+   ]
+  },
+  {
+   "topic": "Flight status",
+   "date": "2015-02-20",
+   "before": 4.333333333333333,
+   "after": 13.4,
+   "ratio": 3.1,
+   "fact": "F17",
+   "drivers": [
+    "sitting",
+    "hours",
+    "tarmac"
+   ]
+  }
+ ]
+}

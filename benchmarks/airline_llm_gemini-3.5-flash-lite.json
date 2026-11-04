@@ -1,0 +1,15 @@
+{
+ "name": "airline llm gemini-3.5-flash-lite",
+ "rows": 300,
+ "accuracy": 0.837,
+ "macro_f1": 0.816,
+ "majority_baseline": 0.59,
+ "provider": "gemini",
+ "model": "gemini-3.5-flash-lite",
+ "calls": 14,
+ "cached_calls": 0,
+ "budget": null,
+ "tokens_in": 21959,
+ "tokens_out": 14975,
+ "seconds_in_llm": 67.9
+}

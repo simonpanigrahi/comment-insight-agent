@@ -1,0 +1,7 @@
+{
+ "name": "airline vader cleaned",
+ "rows": 14640,
+ "accuracy": 0.549,
+ "macro_f1": 0.513,
+ "majority_baseline": 0.627
+}

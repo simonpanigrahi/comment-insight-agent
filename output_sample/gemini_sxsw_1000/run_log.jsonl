@@ -1,0 +1,64 @@
+{"t": 0.04, "type": "decision", "step": "ingest", "text": "Read 9,093 rows. Columns detected, text: tweet_text."}
+{"t": 0.04, "type": "decision", "step": "ingest", "text": "Using a random sample of 1,000 of the 9,093 rows, as asked."}
+{"t": 0.2, "type": "decision", "step": "clean", "text": "Status of rows: {'ok': 1000}. 972 distinct texts remain, so repeats are labelled once. Languages: {'English': 1000}."}
+{"t": 18.57, "type": "event", "step": "llm", "purpose": "ping", "seconds": 18.37, "tokens_in": 11, "tokens_out": 9, "call": 1, "complete": true}
+{"t": 18.57, "type": "decision", "step": "plan", "text": "LLM 'gemini-3.5-flash-lite' responded. 972 distinct comments at 25 per call need about 39 calls. The budget is 200 calls."}
+{"t": 35.97, "type": "event", "step": "llm", "purpose": "name_topics", "seconds": 17.35, "tokens_in": 926, "tokens_out": 150, "call": 2, "complete": true}
+{"t": 35.97, "type": "decision", "step": "discover", "text": "Found 5 topics in the data: Google parties, Apple store, iPhone usage, iPad products, Android apps."}
+{"t": 36.16, "type": "decision", "step": "classify", "text": "The budget allows it, so the LLM labels all 972 comments in this step."}
+{"t": 55.12, "type": "event", "step": "llm", "purpose": "label", "seconds": 18.96, "tokens_in": 1478, "tokens_out": 1126, "call": 3, "complete": true}
+{"t": 70.79, "type": "event", "step": "llm", "purpose": "label", "seconds": 15.66, "tokens_in": 1453, "tokens_out": 1169, "call": 4, "complete": true}
+{"t": 88.83, "type": "event", "step": "llm", "purpose": "label", "seconds": 18.04, "tokens_in": 1478, "tokens_out": 1367, "call": 5, "complete": true}
+{"t": 113.18, "type": "event", "step": "llm", "purpose": "label", "seconds": 24.35, "tokens_in": 1473, "tokens_out": 1158, "call": 6, "complete": true}
+{"t": 142.67, "type": "event", "step": "llm", "purpose": "label", "seconds": 29.49, "tokens_in": 1514, "tokens_out": 1126, "call": 7, "complete": true}
+{"t": 156.19, "type": "event", "step": "llm", "purpose": "label", "seconds": 13.51, "tokens_in": 1472, "tokens_out": 1121, "call": 8, "complete": true}
+{"t": 193.06, "type": "event", "step": "llm", "purpose": "label", "seconds": 36.86, "tokens_in": 1517, "tokens_out": 1148, "call": 9, "complete": true}
+{"t": 207.89, "type": "event", "step": "llm", "purpose": "label", "seconds": 14.83, "tokens_in": 1443, "tokens_out": 1085, "call": 10, "complete": true}
+{"t": 224.39, "type": "event", "step": "llm", "purpose": "label", "seconds": 16.5, "tokens_in": 1473, "tokens_out": 1064, "call": 11, "complete": true}
+{"t": 246.31, "type": "event", "step": "llm", "purpose": "label", "seconds": 21.91, "tokens_in": 1507, "tokens_out": 1164, "call": 12, "complete": true}
+{"t": 266.17, "type": "event", "step": "llm", "purpose": "label", "seconds": 19.86, "tokens_in": 1485, "tokens_out": 1133, "call": 13, "complete": true}
+{"t": 285.63, "type": "event", "step": "llm", "purpose": "label", "seconds": 19.45, "tokens_in": 1522, "tokens_out": 1102, "call": 14, "complete": true}
+{"t": 318.6, "type": "event", "step": "llm", "purpose": "label", "seconds": 32.97, "tokens_in": 1529, "tokens_out": 1231, "call": 15, "complete": true}
+{"t": 318.61, "type": "event", "step": "llm", "purpose": "label", "invalid_reply": "1 validation error for LabelBatch\nresults\n  Field required [type=missing, input_value={'id': 'c25', 'sentiment'...inion', 'urgent': False}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t": 348.5, "type": "event", "step": "llm", "purpose": "label", "seconds": 29.9, "tokens_in": 2341, "tokens_out": 1253, "call": 16, "complete": true}
+{"t": 378.2, "type": "event", "step": "llm", "purpose": "label", "seconds": 29.69, "tokens_in": 1470, "tokens_out": 1105, "call": 17, "complete": true}
+{"t": 403.18, "type": "event", "step": "llm", "purpose": "label", "seconds": 24.98, "tokens_in": 1568, "tokens_out": 1184, "call": 18, "complete": true}
+{"t": 416.63, "type": "event", "step": "llm", "purpose": "label", "seconds": 13.44, "tokens_in": 1516, "tokens_out": 1144, "call": 19, "complete": true}
+{"t": 441.38, "type": "event", "step": "llm", "purpose": "label", "seconds": 24.75, "tokens_in": 1483, "tokens_out": 1082, "call": 20, "complete": true}
+{"t": 451.61, "type": "event", "step": "llm", "purpose": "label", "seconds": 10.22, "tokens_in": 1490, "tokens_out": 1128, "call": 21, "complete": true}
+{"t": 477.63, "type": "event", "step": "llm", "purpose": "label", "seconds": 26.02, "tokens_in": 1575, "tokens_out": 1090, "call": 22, "complete": true}
+{"t": 501.08, "type": "event", "step": "llm", "purpose": "label", "seconds": 23.45, "tokens_in": 1519, "tokens_out": 1240, "call": 23, "complete": true}
+{"t": 521.46, "type": "event", "step": "llm", "purpose": "label", "seconds": 20.38, "tokens_in": 1416, "tokens_out": 1088, "call": 24, "complete": true}
+{"t": 548.8, "type": "event", "step": "llm", "purpose": "label", "seconds": 27.33, "tokens_in": 1456, "tokens_out": 1072, "call": 25, "complete": true}
+{"t": 548.8, "type": "event", "step": "llm", "purpose": "label", "invalid_reply": "1 validation error for LabelBatch\nresults\n  Field required [type=missing, input_value={'id': 'c25', 'sentiment'...rties', 'urgent': False}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t": 567.34, "type": "event", "step": "llm", "purpose": "label", "seconds": 18.53, "tokens_in": 2281, "tokens_out": 1090, "call": 26, "complete": true}
+{"t": 585.88, "type": "event", "step": "llm", "purpose": "label", "seconds": 18.54, "tokens_in": 1481, "tokens_out": 1151, "call": 27, "complete": true}
+{"t": 599.49, "type": "event", "step": "llm", "purpose": "label", "seconds": 13.61, "tokens_in": 1527, "tokens_out": 1184, "call": 28, "complete": true}
+{"t": 624.37, "type": "event", "step": "llm", "purpose": "label", "seconds": 24.88, "tokens_in": 1478, "tokens_out": 1151, "call": 29, "complete": true}
+{"t": 638.5, "type": "event", "step": "llm", "purpose": "label", "seconds": 14.13, "tokens_in": 1486, "tokens_out": 1124, "call": 30, "complete": true}
+{"t": 665.13, "type": "event", "step": "llm", "purpose": "label", "seconds": 26.62, "tokens_in": 1518, "tokens_out": 1185, "call": 31, "complete": true}
+{"t": 679.36, "type": "event", "step": "llm", "purpose": "label", "seconds": 14.23, "tokens_in": 1494, "tokens_out": 1045, "call": 32, "complete": true}
+{"t": 697.69, "type": "event", "step": "llm", "purpose": "label", "seconds": 18.33, "tokens_in": 1504, "tokens_out": 1124, "call": 33, "complete": true}
+{"t": 718.79, "type": "event", "step": "llm", "purpose": "label", "seconds": 21.09, "tokens_in": 1492, "tokens_out": 1145, "call": 34, "complete": true}
+{"t": 733.53, "type": "event", "step": "llm", "purpose": "label", "seconds": 14.74, "tokens_in": 1483, "tokens_out": 1144, "call": 35, "complete": true}
+{"t": 743.2, "type": "event", "step": "llm", "purpose": "label", "seconds": 9.67, "tokens_in": 1518, "tokens_out": 1156, "call": 36, "complete": true}
+{"t": 762.47, "type": "event", "step": "llm", "purpose": "label", "seconds": 19.26, "tokens_in": 1529, "tokens_out": 1090, "call": 37, "complete": true}
+{"t": 773.16, "type": "event", "step": "llm", "purpose": "label", "seconds": 10.69, "tokens_in": 1510, "tokens_out": 1156, "call": 38, "complete": true}
+{"t": 783.74, "type": "event", "step": "llm", "purpose": "label", "seconds": 10.57, "tokens_in": 1482, "tokens_out": 1409, "call": 39, "complete": true}
+{"t": 789.14, "type": "event", "step": "llm", "purpose": "label", "seconds": 5.39, "tokens_in": 1497, "tokens_out": 1073, "call": 40, "complete": true}
+{"t": 799.79, "type": "event", "step": "llm", "purpose": "label", "seconds": 8.54, "tokens_in": 1471, "tokens_out": 1154, "call": 41, "complete": true}
+{"t": 804.4, "type": "event", "step": "llm", "purpose": "label", "seconds": 4.61, "tokens_in": 1548, "tokens_out": 1133, "call": 42, "complete": true}
+{"t": 813.36, "type": "event", "step": "llm", "purpose": "label", "seconds": 6.07, "tokens_in": 1417, "tokens_out": 990, "call": 43, "complete": true}
+{"t": 816.79, "type": "event", "step": "llm", "purpose": "label", "seconds": 1.99, "tokens_in": 733, "tokens_out": 128, "call": 44, "complete": true}
+{"t": 816.79, "type": "decision", "step": "check", "text": "8.8% of comments fit no topic. Accepting the topic list."}
+{"t": 817.12, "type": "decision", "step": "analyse", "text": "Computed 26 facts in code. The LLM labelled 100% of analysed comments. Alerts: none. Spikes: none."}
+{"t": 826.82, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 4.53, "tokens_in": 1168, "tokens_out": 46, "call": 45, "complete": true}
+{"t": 826.82, "type": "decision", "step": "investigate", "text": "LLM chose more_reasons on 'iPhone usage' (Need to understand the specific complaints regarding autocorrect and battery to assess severity.). Found: Reasons for negative comments on iPhone usage: \"complains about iPhone autocorrect and battery\" (6); \"frustrated with Twitter app failure\" (2); \"app drains iPhone battery"}
+{"t": 834.99, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 5.2, "tokens_in": 1246, "tokens_out": 46, "call": 46, "complete": true}
+{"t": 834.99, "type": "decision", "step": "investigate", "text": "LLM chose platform_split on 'iPhone usage' (Determine where the iPhone battery and autocorrect complaints are concentrated to target fixes effectively.). Found: Only one platform has comments on iPhone usage."}
+{"t": 859.18, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 21.89, "tokens_in": 1255, "tokens_out": 57, "call": 47, "complete": true}
+{"t": 859.18, "type": "decision", "step": "investigate", "text": "LLM decided there is enough evidence: We have sufficient detail on the negative reasons for iPhone usage and overall low negative volume.."}
+{"t": 864.8, "type": "event", "step": "llm", "purpose": "write", "seconds": 5.62, "tokens_in": 1331, "tokens_out": 711, "call": 48, "complete": true}
+{"t": 864.8, "type": "decision", "step": "write", "text": "LLM wrote draft 1: 5 points, 4 actions."}
+{"t": 864.8, "type": "decision", "step": "verify", "text": "Checker passed draft 1: every number, date and quote traces back to the facts it cites."}
+{"t": 864.92, "type": "decision", "step": "report", "text": "Report written to output_sample/gemini_sxsw_1000/report.html"}

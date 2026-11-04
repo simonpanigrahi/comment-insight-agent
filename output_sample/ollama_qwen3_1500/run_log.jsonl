@@ -1,0 +1,158 @@
+{"t": 0.05, "type": "decision", "step": "ingest", "text": "Read 4,200 rows. Columns detected, text: comment_text, id: comment_id, platform: platform, time: created_at, author: author."}
+{"t": 0.05, "type": "decision", "step": "ingest", "text": "Repairs and limits: 1.1% of dates could not be read."}
+{"t": 0.05, "type": "decision", "step": "ingest", "text": "Using a random sample of 1,500 of the 4,200 rows, as asked."}
+{"t": 0.19, "type": "decision", "step": "clean", "text": "Status of rows: {'ok': 1441, 'spam': 46, 'no_content': 9, 'injection': 4}. 1,106 distinct texts remain, so repeats are labelled once. Languages: {'English': 1298, 'Hinglish': 107, 'Hindi/Devanagari': 19, 'Odia': 9, 'Tamil': 5, 'Bengali': 3}."}
+{"t": 1.56, "type": "event", "step": "llm", "purpose": "ping", "seconds": 1.37, "tokens_in": 20, "tokens_out": 9, "call": 1, "complete": true}
+{"t": 1.56, "type": "decision", "step": "plan", "text": "LLM 'qwen3:4b' responded. 1,106 distinct comments at 12 per call need about 93 calls. There is no cap on calls, so labelling time is the only cost. Use --limit or --max-llm-calls to shorten it."}
+{"t": 32.05, "type": "event", "step": "llm", "purpose": "name_topics", "seconds": 30.36, "tokens_in": 1006, "tokens_out": 183, "call": 2, "complete": true}
+{"t": 32.05, "type": "decision", "step": "discover", "text": "Found 9 topics in the data: Battery issues, Phone quality, Photo colours, Standby drain, Service centre, Screen damage, Video stabilisation, Camera value, Colour appearance."}
+{"t": 32.26, "type": "decision", "step": "classify", "text": "There is no cap on calls, so the LLM labels all 1,106 comments in this step."}
+{"t": 114.32, "type": "event", "step": "llm", "purpose": "label", "seconds": 82.07, "tokens_in": 917, "tokens_out": 828, "call": 3, "complete": true}
+{"t": 196.31, "type": "event", "step": "llm", "purpose": "label", "seconds": 81.99, "tokens_in": 942, "tokens_out": 834, "call": 4, "complete": true}
+{"t": 271.19, "type": "event", "step": "llm", "purpose": "label", "seconds": 74.88, "tokens_in": 909, "tokens_out": 772, "call": 5, "complete": true}
+{"t": 348.21, "type": "event", "step": "llm", "purpose": "label", "seconds": 77.02, "tokens_in": 897, "tokens_out": 794, "call": 6, "complete": true}
+{"t": 428.07, "type": "event", "step": "llm", "purpose": "label", "seconds": 79.85, "tokens_in": 890, "tokens_out": 829, "call": 7, "complete": true}
+{"t": 510.74, "type": "event", "step": "llm", "purpose": "label", "seconds": 82.67, "tokens_in": 924, "tokens_out": 844, "call": 8, "complete": true}
+{"t": 596.98, "type": "event", "step": "llm", "purpose": "label", "seconds": 86.23, "tokens_in": 950, "tokens_out": 872, "call": 9, "complete": true}
+{"t": 777.13, "type": "event", "step": "llm", "purpose": "label", "retry": "cannot reach http://localhost:11434/api/chat. Is the server running? (ConnectionError)", "wait": 5.0}
+{"t": 871.61, "type": "event", "step": "llm", "purpose": "label", "seconds": 274.61, "tokens_in": 890, "tokens_out": 806, "call": 10, "complete": true}
+{"t": 951.69, "type": "event", "step": "llm", "purpose": "label", "seconds": 80.07, "tokens_in": 903, "tokens_out": 844, "call": 11, "complete": true}
+{"t": 1028.1, "type": "event", "step": "llm", "purpose": "label", "seconds": 76.4, "tokens_in": 946, "tokens_out": 794, "call": 12, "complete": true}
+{"t": 1108.92, "type": "event", "step": "llm", "purpose": "label", "seconds": 80.82, "tokens_in": 896, "tokens_out": 853, "call": 13, "complete": true}
+{"t": 1186.91, "type": "event", "step": "llm", "purpose": "label", "seconds": 77.99, "tokens_in": 900, "tokens_out": 823, "call": 14, "complete": true}
+{"t": 1267.78, "type": "event", "step": "llm", "purpose": "label", "seconds": 80.87, "tokens_in": 893, "tokens_out": 855, "call": 15, "complete": true}
+{"t": 1345.76, "type": "event", "step": "llm", "purpose": "label", "seconds": 77.97, "tokens_in": 890, "tokens_out": 825, "call": 16, "complete": true}
+{"t": 1420.63, "type": "event", "step": "llm", "purpose": "label", "seconds": 74.86, "tokens_in": 885, "tokens_out": 788, "call": 17, "complete": true}
+{"t": 1504.0, "type": "event", "step": "llm", "purpose": "label", "seconds": 83.36, "tokens_in": 941, "tokens_out": 861, "call": 18, "complete": true}
+{"t": 1591.42, "type": "event", "step": "llm", "purpose": "label", "seconds": 87.42, "tokens_in": 948, "tokens_out": 902, "call": 19, "complete": true}
+{"t": 1668.17, "type": "event", "step": "llm", "purpose": "label", "seconds": 76.75, "tokens_in": 881, "tokens_out": 812, "call": 20, "complete": true}
+{"t": 1747.67, "type": "event", "step": "llm", "purpose": "label", "seconds": 79.5, "tokens_in": 893, "tokens_out": 838, "call": 21, "complete": true}
+{"t": 1822.47, "type": "event", "step": "llm", "purpose": "label", "seconds": 74.8, "tokens_in": 868, "tokens_out": 797, "call": 22, "complete": true}
+{"t": 1902.09, "type": "event", "step": "llm", "purpose": "label", "seconds": 79.62, "tokens_in": 910, "tokens_out": 835, "call": 23, "complete": true}
+{"t": 1979.93, "type": "event", "step": "llm", "purpose": "label", "seconds": 77.83, "tokens_in": 892, "tokens_out": 821, "call": 24, "complete": true}
+{"t": 2059.35, "type": "event", "step": "llm", "purpose": "label", "seconds": 79.42, "tokens_in": 909, "tokens_out": 834, "call": 25, "complete": true}
+{"t": 2136.09, "type": "event", "step": "llm", "purpose": "label", "seconds": 76.73, "tokens_in": 885, "tokens_out": 813, "call": 26, "complete": true}
+{"t": 2212.53, "type": "event", "step": "llm", "purpose": "label", "seconds": 76.44, "tokens_in": 915, "tokens_out": 799, "call": 27, "complete": true}
+{"t": 2298.3, "type": "event", "step": "llm", "purpose": "label", "seconds": 85.76, "tokens_in": 914, "tokens_out": 828, "call": 28, "complete": true}
+{"t": 2410.06, "type": "event", "step": "llm", "purpose": "label", "seconds": 111.76, "tokens_in": 923, "tokens_out": 839, "call": 29, "complete": true}
+{"t": 2525.82, "type": "event", "step": "llm", "purpose": "label", "seconds": 115.75, "tokens_in": 893, "tokens_out": 825, "call": 30, "complete": true}
+{"t": 2638.15, "type": "event", "step": "llm", "purpose": "label", "seconds": 112.33, "tokens_in": 888, "tokens_out": 806, "call": 31, "complete": true}
+{"t": 2754.91, "type": "event", "step": "llm", "purpose": "label", "seconds": 116.76, "tokens_in": 905, "tokens_out": 860, "call": 32, "complete": true}
+{"t": 2867.02, "type": "event", "step": "llm", "purpose": "label", "seconds": 112.1, "tokens_in": 930, "tokens_out": 825, "call": 33, "complete": true}
+{"t": 2978.71, "type": "event", "step": "llm", "purpose": "label", "seconds": 111.68, "tokens_in": 895, "tokens_out": 850, "call": 34, "complete": true}
+{"t": 3084.15, "type": "event", "step": "llm", "purpose": "label", "seconds": 105.42, "tokens_in": 914, "tokens_out": 797, "call": 35, "complete": true}
+{"t": 3196.15, "type": "event", "step": "llm", "purpose": "label", "retry": "server error 500", "wait": 5.0}
+{"t": 3333.67, "type": "event", "step": "llm", "purpose": "label", "seconds": 249.5, "tokens_in": 903, "tokens_out": 835, "call": 36, "complete": true}
+{"t": 3430.34, "type": "event", "step": "llm", "purpose": "label", "seconds": 96.64, "tokens_in": 900, "tokens_out": 817, "call": 37, "complete": true}
+{"t": 3516.62, "type": "event", "step": "llm", "purpose": "label", "seconds": 86.28, "tokens_in": 894, "tokens_out": 785, "call": 38, "complete": true}
+{"t": 3596.53, "type": "event", "step": "llm", "purpose": "label", "seconds": 79.9, "tokens_in": 896, "tokens_out": 793, "call": 39, "complete": true}
+{"t": 3674.05, "type": "event", "step": "llm", "purpose": "label", "seconds": 77.52, "tokens_in": 865, "tokens_out": 797, "call": 40, "complete": true}
+{"t": 3752.44, "type": "event", "step": "llm", "purpose": "label", "seconds": 78.38, "tokens_in": 885, "tokens_out": 814, "call": 41, "complete": true}
+{"t": 3833.39, "type": "event", "step": "llm", "purpose": "label", "seconds": 80.95, "tokens_in": 903, "tokens_out": 835, "call": 42, "complete": true}
+{"t": 3910.77, "type": "event", "step": "llm", "purpose": "label", "seconds": 77.38, "tokens_in": 887, "tokens_out": 805, "call": 43, "complete": true}
+{"t": 4007.78, "type": "event", "step": "llm", "purpose": "label", "seconds": 97.01, "tokens_in": 926, "tokens_out": 858, "call": 44, "complete": true}
+{"t": 4115.89, "type": "event", "step": "llm", "purpose": "label", "seconds": 108.1, "tokens_in": 913, "tokens_out": 825, "call": 45, "complete": true}
+{"t": 4210.69, "type": "event", "step": "llm", "purpose": "label", "seconds": 94.8, "tokens_in": 889, "tokens_out": 790, "call": 46, "complete": true}
+{"t": 4312.26, "type": "event", "step": "llm", "purpose": "label", "seconds": 101.56, "tokens_in": 912, "tokens_out": 841, "call": 47, "complete": true}
+{"t": 4407.02, "type": "event", "step": "llm", "purpose": "label", "seconds": 94.75, "tokens_in": 921, "tokens_out": 820, "call": 48, "complete": true}
+{"t": 4512.58, "type": "event", "step": "llm", "purpose": "label", "seconds": 105.56, "tokens_in": 910, "tokens_out": 805, "call": 49, "complete": true}
+{"t": 4614.56, "type": "event", "step": "llm", "purpose": "label", "seconds": 101.98, "tokens_in": 910, "tokens_out": 827, "call": 50, "complete": true}
+{"t": 4727.98, "type": "event", "step": "llm", "purpose": "label", "seconds": 113.42, "tokens_in": 917, "tokens_out": 811, "call": 51, "complete": true}
+{"t": 4828.1, "type": "event", "step": "llm", "purpose": "label", "seconds": 100.11, "tokens_in": 911, "tokens_out": 799, "call": 52, "complete": true}
+{"t": 4943.04, "type": "event", "step": "llm", "purpose": "label", "seconds": 114.94, "tokens_in": 924, "tokens_out": 837, "call": 53, "complete": true}
+{"t": 5039.59, "type": "event", "step": "llm", "purpose": "label", "seconds": 96.54, "tokens_in": 895, "tokens_out": 801, "call": 54, "complete": true}
+{"t": 5145.53, "type": "event", "step": "llm", "purpose": "label", "seconds": 105.93, "tokens_in": 902, "tokens_out": 835, "call": 55, "complete": true}
+{"t": 5235.61, "type": "event", "step": "llm", "purpose": "label", "seconds": 90.08, "tokens_in": 915, "tokens_out": 788, "call": 56, "complete": true}
+{"t": 5315.25, "type": "event", "step": "llm", "purpose": "label", "seconds": 79.63, "tokens_in": 904, "tokens_out": 821, "call": 57, "complete": true}
+{"t": 5392.2, "type": "event", "step": "llm", "purpose": "label", "seconds": 76.95, "tokens_in": 901, "tokens_out": 796, "call": 58, "complete": true}
+{"t": 5467.62, "type": "event", "step": "llm", "purpose": "label", "seconds": 75.41, "tokens_in": 909, "tokens_out": 800, "call": 59, "complete": true}
+{"t": 5547.06, "type": "event", "step": "llm", "purpose": "label", "seconds": 79.44, "tokens_in": 912, "tokens_out": 844, "call": 60, "complete": true}
+{"t": 5619.26, "type": "event", "step": "llm", "purpose": "label", "seconds": 72.2, "tokens_in": 904, "tokens_out": 770, "call": 61, "complete": true}
+{"t": 5697.87, "type": "event", "step": "llm", "purpose": "label", "seconds": 78.61, "tokens_in": 909, "tokens_out": 836, "call": 62, "complete": true}
+{"t": 5772.02, "type": "event", "step": "llm", "purpose": "label", "seconds": 74.14, "tokens_in": 895, "tokens_out": 793, "call": 63, "complete": true}
+{"t": 5855.74, "type": "event", "step": "llm", "purpose": "label", "seconds": 83.72, "tokens_in": 963, "tokens_out": 823, "call": 64, "complete": true}
+{"t": 5948.09, "type": "event", "step": "llm", "purpose": "label", "seconds": 92.34, "tokens_in": 939, "tokens_out": 831, "call": 65, "complete": true}
+{"t": 6036.5, "type": "event", "step": "llm", "purpose": "label", "seconds": 88.41, "tokens_in": 925, "tokens_out": 803, "call": 66, "complete": true}
+{"t": 6121.1, "type": "event", "step": "llm", "purpose": "label", "seconds": 84.59, "tokens_in": 910, "tokens_out": 775, "call": 67, "complete": true}
+{"t": 6209.25, "type": "event", "step": "llm", "purpose": "label", "seconds": 88.14, "tokens_in": 907, "tokens_out": 819, "call": 68, "complete": true}
+{"t": 6300.86, "type": "event", "step": "llm", "purpose": "label", "seconds": 91.61, "tokens_in": 928, "tokens_out": 839, "call": 69, "complete": true}
+{"t": 6394.22, "type": "event", "step": "llm", "purpose": "label", "seconds": 93.36, "tokens_in": 905, "tokens_out": 864, "call": 70, "complete": true}
+{"t": 6480.9, "type": "event", "step": "llm", "purpose": "label", "seconds": 86.68, "tokens_in": 919, "tokens_out": 789, "call": 71, "complete": true}
+{"t": 6565.44, "type": "event", "step": "llm", "purpose": "label", "seconds": 84.53, "tokens_in": 905, "tokens_out": 775, "call": 72, "complete": true}
+{"t": 6657.35, "type": "event", "step": "llm", "purpose": "label", "seconds": 91.91, "tokens_in": 906, "tokens_out": 846, "call": 73, "complete": true}
+{"t": 6744.11, "type": "event", "step": "llm", "purpose": "label", "seconds": 86.76, "tokens_in": 887, "tokens_out": 804, "call": 74, "complete": true}
+{"t": 6834.13, "type": "event", "step": "llm", "purpose": "label", "seconds": 90.01, "tokens_in": 910, "tokens_out": 826, "call": 75, "complete": true}
+{"t": 6925.85, "type": "event", "step": "llm", "purpose": "label", "seconds": 91.72, "tokens_in": 910, "tokens_out": 845, "call": 76, "complete": true}
+{"t": 7015.1, "type": "event", "step": "llm", "purpose": "label", "seconds": 89.25, "tokens_in": 892, "tokens_out": 829, "call": 77, "complete": true}
+{"t": 7106.86, "type": "event", "step": "llm", "purpose": "label", "seconds": 91.76, "tokens_in": 911, "tokens_out": 844, "call": 78, "complete": true}
+{"t": 7193.53, "type": "event", "step": "llm", "purpose": "label", "seconds": 86.66, "tokens_in": 882, "tokens_out": 806, "call": 79, "complete": true}
+{"t": 7279.68, "type": "event", "step": "llm", "purpose": "label", "seconds": 86.15, "tokens_in": 871, "tokens_out": 808, "call": 80, "complete": true}
+{"t": 7368.19, "type": "event", "step": "llm", "purpose": "label", "seconds": 88.51, "tokens_in": 909, "tokens_out": 814, "call": 81, "complete": true}
+{"t": 7457.14, "type": "event", "step": "llm", "purpose": "label", "seconds": 88.94, "tokens_in": 905, "tokens_out": 818, "call": 82, "complete": true}
+{"t": 7546.3, "type": "event", "step": "llm", "purpose": "label", "seconds": 89.15, "tokens_in": 904, "tokens_out": 824, "call": 83, "complete": true}
+{"t": 7632.2, "type": "event", "step": "llm", "purpose": "label", "seconds": 85.9, "tokens_in": 881, "tokens_out": 804, "call": 84, "complete": true}
+{"t": 7720.64, "type": "event", "step": "llm", "purpose": "label", "seconds": 88.44, "tokens_in": 906, "tokens_out": 816, "call": 85, "complete": true}
+{"t": 7807.93, "type": "event", "step": "llm", "purpose": "label", "seconds": 87.28, "tokens_in": 896, "tokens_out": 807, "call": 86, "complete": true}
+{"t": 7899.97, "type": "event", "step": "llm", "purpose": "label", "seconds": 92.04, "tokens_in": 935, "tokens_out": 844, "call": 87, "complete": true}
+{"t": 7991.64, "type": "event", "step": "llm", "purpose": "label", "seconds": 91.66, "tokens_in": 946, "tokens_out": 826, "call": 88, "complete": true}
+{"t": 8122.1, "type": "event", "step": "llm", "purpose": "label", "seconds": 130.45, "tokens_in": 927, "tokens_out": 785, "call": 89, "complete": true}
+{"t": 8274.39, "type": "event", "step": "llm", "purpose": "label", "seconds": 152.29, "tokens_in": 922, "tokens_out": 803, "call": 90, "complete": true}
+{"t": 8438.63, "type": "event", "step": "llm", "purpose": "label", "seconds": 164.23, "tokens_in": 922, "tokens_out": 846, "call": 91, "complete": true}
+{"t": 8556.76, "type": "event", "step": "llm", "purpose": "label", "seconds": 118.12, "tokens_in": 888, "tokens_out": 822, "call": 92, "complete": true}
+{"t": 8637.57, "type": "event", "step": "llm", "purpose": "label", "seconds": 80.81, "tokens_in": 942, "tokens_out": 867, "call": 93, "complete": true}
+{"t": 8708.95, "type": "event", "step": "llm", "purpose": "label", "seconds": 71.38, "tokens_in": 865, "tokens_out": 785, "call": 94, "complete": true}
+{"t": 8721.04, "type": "event", "step": "llm", "purpose": "label", "seconds": 12.08, "tokens_in": 656, "tokens_out": 138, "call": 95, "complete": true}
+{"t": 8728.7, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.65, "tokens_in": 657, "tokens_out": 85, "call": 96, "complete": true}
+{"t": 8728.74, "type": "decision", "step": "check", "text": "25.9% of comments fit no topic, above the 15% limit. Going back to find more topics."}
+{"t": 8745.62, "type": "event", "step": "llm", "purpose": "name_topics", "seconds": 16.8, "tokens_in": 593, "tokens_out": 107, "call": 97, "complete": true}
+{"t": 8745.62, "type": "decision", "step": "discover", "text": "Round 2: looked at 265 unmatched comments and added topics: Software updates, Phone exchange value, Delivery status, Price reduction, Box and charger."}
+{"t": 8745.64, "type": "decision", "step": "classify", "text": "There is no cap on calls, so the LLM labels all 265 comments in this step."}
+{"t": 8821.64, "type": "event", "step": "llm", "purpose": "label", "seconds": 76.0, "tokens_in": 906, "tokens_out": 808, "call": 98, "complete": true}
+{"t": 8896.08, "type": "event", "step": "llm", "purpose": "label", "seconds": 74.44, "tokens_in": 892, "tokens_out": 799, "call": 99, "complete": true}
+{"t": 8976.1, "type": "event", "step": "llm", "purpose": "label", "seconds": 80.01, "tokens_in": 923, "tokens_out": 850, "call": 100, "complete": true}
+{"t": 9051.61, "type": "event", "step": "llm", "purpose": "label", "seconds": 75.51, "tokens_in": 889, "tokens_out": 814, "call": 101, "complete": true}
+{"t": 9130.6, "type": "event", "step": "llm", "purpose": "label", "seconds": 78.98, "tokens_in": 905, "tokens_out": 845, "call": 102, "complete": true}
+{"t": 9208.52, "type": "event", "step": "llm", "purpose": "label", "seconds": 77.92, "tokens_in": 922, "tokens_out": 829, "call": 103, "complete": true}
+{"t": 9285.81, "type": "event", "step": "llm", "purpose": "label", "seconds": 77.29, "tokens_in": 912, "tokens_out": 824, "call": 104, "complete": true}
+{"t": 9360.98, "type": "event", "step": "llm", "purpose": "label", "seconds": 75.16, "tokens_in": 885, "tokens_out": 810, "call": 105, "complete": true}
+{"t": 9440.23, "type": "event", "step": "llm", "purpose": "label", "seconds": 79.26, "tokens_in": 954, "tokens_out": 834, "call": 106, "complete": true}
+{"t": 9512.42, "type": "event", "step": "llm", "purpose": "label", "seconds": 72.18, "tokens_in": 888, "tokens_out": 778, "call": 107, "complete": true}
+{"t": 9592.11, "type": "event", "step": "llm", "purpose": "label", "seconds": 79.69, "tokens_in": 914, "tokens_out": 849, "call": 108, "complete": true}
+{"t": 9667.19, "type": "event", "step": "llm", "purpose": "label", "seconds": 75.07, "tokens_in": 896, "tokens_out": 804, "call": 109, "complete": true}
+{"t": 9744.62, "type": "event", "step": "llm", "purpose": "label", "seconds": 77.42, "tokens_in": 905, "tokens_out": 828, "call": 110, "complete": true}
+{"t": 9820.68, "type": "event", "step": "llm", "purpose": "label", "seconds": 76.06, "tokens_in": 895, "tokens_out": 815, "call": 111, "complete": true}
+{"t": 9896.43, "type": "event", "step": "llm", "purpose": "label", "seconds": 75.74, "tokens_in": 907, "tokens_out": 809, "call": 112, "complete": true}
+{"t": 9971.84, "type": "event", "step": "llm", "purpose": "label", "seconds": 75.41, "tokens_in": 931, "tokens_out": 800, "call": 113, "complete": true}
+{"t": 10047.33, "type": "event", "step": "llm", "purpose": "label", "seconds": 75.49, "tokens_in": 907, "tokens_out": 807, "call": 114, "complete": true}
+{"t": 10124.25, "type": "event", "step": "llm", "purpose": "label", "seconds": 76.91, "tokens_in": 919, "tokens_out": 819, "call": 115, "complete": true}
+{"t": 10200.15, "type": "event", "step": "llm", "purpose": "label", "seconds": 75.89, "tokens_in": 889, "tokens_out": 817, "call": 116, "complete": true}
+{"t": 10276.38, "type": "event", "step": "llm", "purpose": "label", "seconds": 76.23, "tokens_in": 919, "tokens_out": 811, "call": 117, "complete": true}
+{"t": 10357.24, "type": "event", "step": "llm", "purpose": "label", "seconds": 80.86, "tokens_in": 965, "tokens_out": 847, "call": 118, "complete": true}
+{"t": 10439.49, "type": "event", "step": "llm", "purpose": "label", "seconds": 82.25, "tokens_in": 956, "tokens_out": 863, "call": 119, "complete": true}
+{"t": 10445.62, "type": "event", "step": "llm", "purpose": "label", "seconds": 6.13, "tokens_in": 645, "tokens_out": 70, "call": 120, "complete": true}
+{"t": 10453.52, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.9, "tokens_in": 677, "tokens_out": 87, "call": 121, "complete": true}
+{"t": 10453.52, "type": "decision", "step": "check", "text": "8.6% of comments fit no topic. Accepting the topic list."}
+{"t": 10454.35, "type": "decision", "step": "analyse", "text": "Computed 57 facts in code. The LLM labelled 100% of analysed comments. Alerts: Possible safety: 14; Possible legal or fraud: 5; Possible privacy or security: 3; Reputation: 1. Spikes: Battery issues from 2026-09-24."}
+{"t": 10478.95, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 24.6, "tokens_in": 1311, "tokens_out": 62, "call": 122, "complete": true}
+{"t": 10478.95, "type": "decision", "step": "investigate", "text": "LLM chose time_trend on 'Battery issues' (Battery issues have a spike in negative comments, and understanding if negative comments are rising/falling is critical for prioritization). Found: Battery issues negative comments per day: 7.0 in the first third of the period, 9.4 in the last third, peak 22 on 2026-09-24."}
+{"t": 10495.91, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 16.95, "tokens_in": 1325, "tokens_out": 51, "call": 123, "complete": true}
+{"t": 10495.91, "type": "decision", "step": "investigate", "text": "Fixed priority order (the LLM chose time_trend on 'Battery issues', which is an unknown topic or was already done) chose spike_drivers on 'Battery issues' (find out what changed when the spike began). Found: Words far more common in negative Battery issues comments from 2026-09-24 than before it: v1.2, update, phone, backup, roll, installed. This shows they happened together,"}
+{"t": 10513.22, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 17.3, "tokens_in": 1309, "tokens_out": 58, "call": 124, "complete": true}
+{"t": 10513.22, "type": "decision", "step": "investigate", "text": "LLM chose more_reasons on 'Battery issues' (To understand why negative comments on battery issues are rising, which could reveal critical issues needing immediate action.). Found: Reasons for negative comments on Battery issues: \"battery drains fast\" (47); \"battery dies quickly\" (29); \"battery life reduced\" (21); \"battery ruined by update\" (20); \"b"}
+{"t": 10529.67, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 16.45, "tokens_in": 1291, "tokens_out": 69, "call": 125, "complete": true}
+{"t": 10529.67, "type": "decision", "step": "investigate", "text": "LLM chose search on 'battery dies quickly' (To find if 'battery dies quickly' is a key phrase driving negative comments on battery issues, which could indicate a specific problem needing urgent attention.). Found: No comment contains \"battery dies quickly\"."}
+{"t": 10536.74, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 7.07, "tokens_in": 1297, "tokens_out": 75, "call": 126, "complete": true}
+{"t": 10536.75, "type": "decision", "step": "investigate", "text": "Fixed priority order (the LLM chose time_trend on 'Battery issues', which is an unknown topic or was already done) chose top_quotes on 'Battery issues' (see the comments with the most reach in a high-impact topic). Found: Most engaged negative comments on Battery issues: \"Honestly, my battery is swollen and the back cover is lifting\" (engagement 180); \"So this phone: phone got so hot while"}
+{"t": 10551.51, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 14.76, "tokens_in": 1262, "tokens_out": 57, "call": 127, "complete": true}
+{"t": 10551.51, "type": "decision", "step": "investigate", "text": "Fixed priority order (the LLM chose time_trend on 'Battery issues', which is an unknown topic or was already done) chose top_quotes on 'Service centre' (see the comments with the most reach in a high-impact topic). Found: Most engaged negative comments on Service centre: \"as a long time fan, support chat just keeps looping\" (engagement 39); \"Service centre says parts are not available\" (en"}
+{"t": 10660.49, "type": "event", "step": "llm", "purpose": "write", "seconds": 108.98, "tokens_in": 2089, "tokens_out": 729, "call": 128, "complete": true}
+{"t": 10660.49, "type": "decision", "step": "write", "text": "LLM wrote draft 1: 4 points, 5 actions."}
+{"t": 10660.49, "type": "decision", "step": "verify", "text": "Checker rejected draft 1 with 6 problems. First: headline states a cause (\"causing\") as proven. The facts only show things happening together, so write \"may be linked\"."}
+{"t": 10832.65, "type": "event", "step": "llm", "purpose": "write", "seconds": 172.16, "tokens_in": 2838, "tokens_out": 1033, "call": 129, "complete": true}
+{"t": 10832.65, "type": "decision", "step": "write", "text": "LLM wrote draft 2: 4 points, 8 actions."}
+{"t": 10832.65, "type": "decision", "step": "verify", "text": "Checker rejected draft 2 with 3 problems. First: headline states a cause (\"causing\") as proven. The facts only show things happening together, so write \"may be linked\"."}
+{"t": 11010.04, "type": "event", "step": "llm", "purpose": "write", "seconds": 177.39, "tokens_in": 3032, "tokens_out": 1033, "call": 130, "complete": true}
+{"t": 11010.04, "type": "decision", "step": "write", "text": "LLM wrote draft 3: 4 points, 8 actions."}
+{"t": 11010.05, "type": "decision", "step": "verify", "text": "Checker rejected draft 3 with 3 problems. First: headline states a cause (\"causing\") as proven. The facts only show things happening together, so write \"may be linked\"."}
+{"t": 11010.05, "type": "decision", "step": "verify", "text": "Rewrites ran out. Removed 2 statements that still failed the checker. The report says so."}
+{"t": 11010.11, "type": "decision", "step": "report", "text": "Report written to output_sample/ollama_qwen3_1500/report.html"}

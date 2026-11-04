@@ -1,0 +1,133 @@
+{"t": 0.05, "type": "decision", "step": "ingest", "text": "Read 4,200 rows. Columns detected, text: comment_text, id: comment_id, platform: platform, time: created_at, author: author."}
+{"t": 0.05, "type": "decision", "step": "ingest", "text": "Repairs and limits: 1.1% of dates could not be read."}
+{"t": 0.41, "type": "decision", "step": "clean", "text": "Status of rows: {'ok': 4054, 'spam': 115, 'no_content': 24, 'injection': 7}. 2,533 distinct texts remain, so repeats are labelled once. Languages: {'English': 3651, 'Hinglish': 308, 'Hindi/Devanagari': 50, 'Odia': 21, 'Tamil': 12, 'Bengali': 12}."}
+{"t": 2.62, "type": "event", "step": "llm", "purpose": "ping", "seconds": 2.21, "tokens_in": 11, "tokens_out": 5, "call": 1, "complete": true}
+{"t": 2.62, "type": "decision", "step": "plan", "text": "LLM 'gemini-3.5-flash-lite' responded. 2,533 distinct comments at 25 per call need about 102 calls. The budget is 200 calls."}
+{"t": 11.53, "type": "event", "step": "llm", "purpose": "name_topics", "seconds": 3.62, "tokens_in": 1367, "tokens_out": 114, "call": 2, "complete": true}
+{"t": 11.53, "type": "decision", "step": "discover", "text": "Found 8 topics in the data: Battery life, General impression, Camera quality, Customer service, Phone design, Company support, Delivery status, Launch offer."}
+{"t": 11.97, "type": "decision", "step": "classify", "text": "The budget allows it, so the LLM labels all 2,533 comments in this step."}
+{"t": 22.7, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.29, "tokens_in": 1254, "tokens_out": 1079, "call": 3, "complete": true}
+{"t": 31.46, "type": "event", "step": "llm", "purpose": "label", "seconds": 8.55, "tokens_in": 1249, "tokens_out": 1070, "call": 4, "complete": true}
+{"t": 40.41, "type": "event", "step": "llm", "purpose": "label", "seconds": 8.94, "tokens_in": 1180, "tokens_out": 1085, "call": 5, "complete": true}
+{"t": 48.9, "type": "event", "step": "llm", "purpose": "label", "seconds": 8.49, "tokens_in": 1231, "tokens_out": 1103, "call": 6, "complete": true}
+{"t": 57.61, "type": "event", "step": "llm", "purpose": "label", "seconds": 8.7, "tokens_in": 1244, "tokens_out": 1128, "call": 7, "complete": true}
+{"t": 62.12, "type": "event", "step": "llm", "purpose": "label", "seconds": 4.5, "tokens_in": 1230, "tokens_out": 1067, "call": 8, "complete": true}
+{"t": 71.15, "type": "event", "step": "llm", "purpose": "label", "seconds": 6.03, "tokens_in": 1196, "tokens_out": 1052, "call": 9, "complete": true}
+{"t": 80.96, "type": "event", "step": "llm", "purpose": "label", "seconds": 8.34, "tokens_in": 1251, "tokens_out": 1069, "call": 10, "complete": true}
+{"t": 88.13, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.16, "tokens_in": 1228, "tokens_out": 1393, "call": 11, "complete": true}
+{"t": 94.37, "type": "event", "step": "llm", "purpose": "label", "seconds": 5.91, "tokens_in": 1219, "tokens_out": 1074, "call": 12, "complete": true}
+{"t": 101.64, "type": "event", "step": "llm", "purpose": "label", "seconds": 5.68, "tokens_in": 1238, "tokens_out": 1069, "call": 13, "complete": true}
+{"t": 108.71, "type": "event", "step": "llm", "purpose": "label", "seconds": 5.24, "tokens_in": 1215, "tokens_out": 1077, "call": 14, "complete": true}
+{"t": 115.19, "type": "event", "step": "llm", "purpose": "label", "seconds": 4.23, "tokens_in": 1231, "tokens_out": 1066, "call": 15, "complete": true}
+{"t": 122.23, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.76, "tokens_in": 1186, "tokens_out": 1391, "call": 16, "complete": true}
+{"t": 128.97, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.01, "tokens_in": 1243, "tokens_out": 1050, "call": 17, "complete": true}
+{"t": 141.17, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.7, "tokens_in": 1223, "tokens_out": 1106, "call": 18, "complete": true}
+{"t": 144.09, "type": "event", "step": "llm", "purpose": "label", "seconds": 2.92, "tokens_in": 1194, "tokens_out": 1054, "call": 19, "complete": true}
+{"t": 152.85, "type": "event", "step": "llm", "purpose": "label", "seconds": 4.18, "tokens_in": 1211, "tokens_out": 1065, "call": 20, "complete": true}
+{"t": 160.42, "type": "event", "step": "llm", "purpose": "label", "seconds": 4.24, "tokens_in": 1201, "tokens_out": 1350, "call": 21, "complete": true}
+{"t": 167.08, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.4, "tokens_in": 1199, "tokens_out": 1065, "call": 22, "complete": true}
+{"t": 174.35, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.17, "tokens_in": 1258, "tokens_out": 1086, "call": 23, "complete": true}
+{"t": 186.09, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.42, "tokens_in": 1243, "tokens_out": 1101, "call": 24, "complete": true}
+{"t": 195.13, "type": "event", "step": "llm", "purpose": "label", "seconds": 8.96, "tokens_in": 1210, "tokens_out": 1075, "call": 25, "complete": true}
+{"t": 198.51, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.37, "tokens_in": 1276, "tokens_out": 1103, "call": 26, "complete": true}
+{"t": 212.85, "type": "event", "step": "llm", "purpose": "label", "seconds": 10.21, "tokens_in": 1244, "tokens_out": 1071, "call": 27, "complete": true}
+{"t": 215.82, "type": "event", "step": "llm", "purpose": "label", "seconds": 2.96, "tokens_in": 1248, "tokens_out": 1039, "call": 28, "complete": true}
+{"t": 223.81, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.45, "tokens_in": 1236, "tokens_out": 1126, "call": 29, "complete": true}
+{"t": 235.99, "type": "event", "step": "llm", "purpose": "label", "seconds": 8.14, "tokens_in": 1214, "tokens_out": 1417, "call": 30, "complete": true}
+{"t": 245.62, "type": "event", "step": "llm", "purpose": "label", "seconds": 9.62, "tokens_in": 1268, "tokens_out": 1088, "call": 31, "complete": true}
+{"t": 254.02, "type": "event", "step": "llm", "purpose": "label", "seconds": 8.39, "tokens_in": 1236, "tokens_out": 1048, "call": 32, "complete": true}
+{"t": 261.49, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.47, "tokens_in": 1236, "tokens_out": 1111, "call": 33, "complete": true}
+{"t": 269.19, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.67, "tokens_in": 1211, "tokens_out": 1117, "call": 34, "complete": true}
+{"t": 272.45, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.25, "tokens_in": 1242, "tokens_out": 1059, "call": 35, "complete": true}
+{"t": 272.45, "type": "event", "step": "llm", "purpose": "label", "invalid_reply": "1 validation error for LabelBatch\nresults\n  Field required [type=missing, input_value={'id': 'c25', 'sentiment'...ssion', 'urgent': False}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t": 282.9, "type": "event", "step": "llm", "purpose": "label", "seconds": 6.19, "tokens_in": 2028, "tokens_out": 1058, "call": 36, "complete": true}
+{"t": 287.91, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.71, "tokens_in": 1272, "tokens_out": 1083, "call": 37, "complete": true}
+{"t": 298.15, "type": "event", "step": "llm", "purpose": "label", "seconds": 6.45, "tokens_in": 1231, "tokens_out": 1359, "call": 38, "complete": true}
+{"t": 302.25, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.05, "tokens_in": 1260, "tokens_out": 1069, "call": 39, "complete": true}
+{"t": 310.85, "type": "event", "step": "llm", "purpose": "label", "seconds": 4.15, "tokens_in": 1240, "tokens_out": 1349, "call": 40, "complete": true}
+{"t": 317.11, "type": "event", "step": "llm", "purpose": "label", "seconds": 2.91, "tokens_in": 1240, "tokens_out": 1056, "call": 41, "complete": true}
+{"t": 324.88, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.18, "tokens_in": 1255, "tokens_out": 1122, "call": 42, "complete": true}
+{"t": 332.25, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.05, "tokens_in": 1203, "tokens_out": 1054, "call": 43, "complete": true}
+{"t": 341.88, "type": "event", "step": "llm", "purpose": "label", "seconds": 5.17, "tokens_in": 1244, "tokens_out": 1083, "call": 44, "complete": true}
+{"t": 347.2, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.0, "tokens_in": 1217, "tokens_out": 1050, "call": 45, "complete": true}
+{"t": 355.07, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.37, "tokens_in": 1226, "tokens_out": 1088, "call": 46, "complete": true}
+{"t": 362.77, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.56, "tokens_in": 1229, "tokens_out": 1379, "call": 47, "complete": true}
+{"t": 371.85, "type": "event", "step": "llm", "purpose": "label", "seconds": 5.15, "tokens_in": 1222, "tokens_out": 1145, "call": 48, "complete": true}
+{"t": 377.61, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.41, "tokens_in": 1246, "tokens_out": 1090, "call": 49, "complete": true}
+{"t": 385.6, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.9, "tokens_in": 1299, "tokens_out": 1403, "call": 50, "complete": true}
+{"t": 396.25, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.05, "tokens_in": 1318, "tokens_out": 1032, "call": 51, "complete": true}
+{"t": 400.65, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.95, "tokens_in": 1258, "tokens_out": 1122, "call": 52, "complete": true}
+{"t": 407.72, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.51, "tokens_in": 1278, "tokens_out": 1094, "call": 53, "complete": true}
+{"t": 421.24, "type": "event", "step": "llm", "purpose": "label", "seconds": 9.53, "tokens_in": 1230, "tokens_out": 1386, "call": 54, "complete": true}
+{"t": 424.31, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.07, "tokens_in": 1234, "tokens_out": 1125, "call": 55, "complete": true}
+{"t": 431.89, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.15, "tokens_in": 1229, "tokens_out": 1076, "call": 56, "complete": true}
+{"t": 439.41, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.17, "tokens_in": 1254, "tokens_out": 1073, "call": 57, "complete": true}
+{"t": 446.73, "type": "event", "step": "llm", "purpose": "label", "seconds": 2.99, "tokens_in": 1250, "tokens_out": 1052, "call": 58, "complete": true}
+{"t": 455.1, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.86, "tokens_in": 1228, "tokens_out": 1405, "call": 59, "complete": true}
+{"t": 461.68, "type": "event", "step": "llm", "purpose": "label", "seconds": 2.94, "tokens_in": 1289, "tokens_out": 1064, "call": 60, "complete": true}
+{"t": 469.47, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.22, "tokens_in": 1238, "tokens_out": 1082, "call": 61, "complete": true}
+{"t": 476.84, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.1, "tokens_in": 1295, "tokens_out": 1108, "call": 62, "complete": true}
+{"t": 476.84, "type": "event", "step": "llm", "purpose": "label", "invalid_reply": "1 validation error for LabelBatch\nresults\n  Field required [type=missing, input_value={'id': 'c25', 'sentiment'... life', 'urgent': False}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t": 484.45, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.21, "tokens_in": 2061, "tokens_out": 1165, "call": 63, "complete": true}
+{"t": 495.0, "type": "event", "step": "llm", "purpose": "label", "seconds": 6.26, "tokens_in": 1244, "tokens_out": 1327, "call": 64, "complete": true}
+{"t": 499.68, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.43, "tokens_in": 1213, "tokens_out": 1085, "call": 65, "complete": true}
+{"t": 506.97, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.23, "tokens_in": 1259, "tokens_out": 1080, "call": 66, "complete": true}
+{"t": 514.63, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.38, "tokens_in": 1255, "tokens_out": 1350, "call": 67, "complete": true}
+{"t": 522.1, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.36, "tokens_in": 1222, "tokens_out": 1069, "call": 68, "complete": true}
+{"t": 530.14, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.9, "tokens_in": 1225, "tokens_out": 1047, "call": 69, "complete": true}
+{"t": 537.15, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.41, "tokens_in": 1303, "tokens_out": 1079, "call": 70, "complete": true}
+{"t": 547.39, "type": "event", "step": "llm", "purpose": "label", "seconds": 6.15, "tokens_in": 1222, "tokens_out": 1337, "call": 71, "complete": true}
+{"t": 555.37, "type": "event", "step": "llm", "purpose": "label", "seconds": 6.63, "tokens_in": 1229, "tokens_out": 1441, "call": 72, "complete": true}
+{"t": 562.45, "type": "event", "step": "llm", "purpose": "label", "seconds": 6.2, "tokens_in": 1306, "tokens_out": 1072, "call": 73, "complete": true}
+{"t": 566.95, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.21, "tokens_in": 1246, "tokens_out": 1077, "call": 74, "complete": true}
+{"t": 577.71, "type": "event", "step": "llm", "purpose": "label", "seconds": 6.46, "tokens_in": 1266, "tokens_out": 1095, "call": 75, "complete": true}
+{"t": 586.41, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.67, "tokens_in": 1255, "tokens_out": 1382, "call": 76, "complete": true}
+{"t": 592.46, "type": "event", "step": "llm", "purpose": "label", "seconds": 6.04, "tokens_in": 1281, "tokens_out": 1070, "call": 77, "complete": true}
+{"t": 598.09, "type": "event", "step": "llm", "purpose": "label", "seconds": 4.17, "tokens_in": 1263, "tokens_out": 1129, "call": 78, "complete": true}
+{"t": 606.68, "type": "event", "step": "llm", "purpose": "label", "seconds": 5.27, "tokens_in": 1322, "tokens_out": 1069, "call": 79, "complete": true}
+{"t": 613.24, "type": "event", "step": "llm", "purpose": "label", "seconds": 4.32, "tokens_in": 1235, "tokens_out": 1057, "call": 80, "complete": true}
+{"t": 620.41, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.99, "tokens_in": 1259, "tokens_out": 1083, "call": 81, "complete": true}
+{"t": 628.19, "type": "event", "step": "llm", "purpose": "label", "seconds": 4.27, "tokens_in": 1223, "tokens_out": 1061, "call": 82, "complete": true}
+{"t": 635.36, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.94, "tokens_in": 1242, "tokens_out": 1081, "call": 83, "complete": true}
+{"t": 642.22, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.3, "tokens_in": 1274, "tokens_out": 1114, "call": 84, "complete": true}
+{"t": 649.79, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.38, "tokens_in": 1297, "tokens_out": 1105, "call": 85, "complete": true}
+{"t": 657.68, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.76, "tokens_in": 1265, "tokens_out": 1071, "call": 86, "complete": true}
+{"t": 671.1, "type": "event", "step": "llm", "purpose": "label", "seconds": 9.68, "tokens_in": 1244, "tokens_out": 1102, "call": 87, "complete": true}
+{"t": 674.46, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.36, "tokens_in": 1271, "tokens_out": 1099, "call": 88, "complete": true}
+{"t": 681.85, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.25, "tokens_in": 1306, "tokens_out": 1097, "call": 89, "complete": true}
+{"t": 681.85, "type": "event", "step": "llm", "purpose": "label", "invalid_reply": "1 validation error for LabelBatch\nresults\n  Field required [type=missing, input_value={'id': 'c25', 'sentiment'...tatus', 'urgent': False}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t": 694.13, "type": "event", "step": "llm", "purpose": "label", "seconds": 8.03, "tokens_in": 2107, "tokens_out": 1104, "call": 90, "complete": true}
+{"t": 697.21, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.07, "tokens_in": 1248, "tokens_out": 1110, "call": 91, "complete": true}
+{"t": 707.53, "type": "event", "step": "llm", "purpose": "label", "seconds": 5.89, "tokens_in": 1248, "tokens_out": 1073, "call": 92, "complete": true}
+{"t": 712.06, "type": "event", "step": "llm", "purpose": "label", "seconds": 2.92, "tokens_in": 1250, "tokens_out": 1060, "call": 93, "complete": true}
+{"t": 719.52, "type": "event", "step": "llm", "purpose": "label", "seconds": 2.88, "tokens_in": 1241, "tokens_out": 1071, "call": 94, "complete": true}
+{"t": 730.9, "type": "event", "step": "llm", "purpose": "label", "seconds": 6.76, "tokens_in": 1268, "tokens_out": 1106, "call": 95, "complete": true}
+{"t": 734.99, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.35, "tokens_in": 1293, "tokens_out": 1080, "call": 96, "complete": true}
+{"t": 742.37, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.22, "tokens_in": 1270, "tokens_out": 1114, "call": 97, "complete": true}
+{"t": 749.64, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.0, "tokens_in": 1244, "tokens_out": 1067, "call": 98, "complete": true}
+{"t": 761.6, "type": "event", "step": "llm", "purpose": "label", "seconds": 7.46, "tokens_in": 1264, "tokens_out": 1352, "call": 99, "complete": true}
+{"t": 764.84, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.2, "tokens_in": 1275, "tokens_out": 1087, "call": 100, "complete": true}
+{"t": 780.66, "type": "event", "step": "llm", "purpose": "label", "seconds": 11.52, "tokens_in": 1266, "tokens_out": 1076, "call": 101, "complete": true}
+{"t": 783.79, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.12, "tokens_in": 1238, "tokens_out": 1096, "call": 102, "complete": true}
+{"t": 791.31, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.14, "tokens_in": 1241, "tokens_out": 1098, "call": 103, "complete": true}
+{"t": 798.69, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.02, "tokens_in": 1260, "tokens_out": 1062, "call": 104, "complete": true}
+{"t": 806.78, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.61, "tokens_in": 1273, "tokens_out": 1387, "call": 105, "complete": true}
+{"t": 813.68, "type": "event", "step": "llm", "purpose": "label", "seconds": 3.01, "tokens_in": 1283, "tokens_out": 1083, "call": 106, "complete": true}
+{"t": 819.68, "type": "event", "step": "llm", "purpose": "label", "seconds": 1.51, "tokens_in": 840, "tokens_out": 333, "call": 107, "complete": true}
+{"t": 826.64, "type": "event", "step": "llm", "purpose": "label", "seconds": 0.97, "tokens_in": 684, "tokens_out": 93, "call": 108, "complete": true}
+{"t": 826.65, "type": "decision", "step": "check", "text": "12.0% of comments fit no topic. Accepting the topic list."}
+{"t": 827.42, "type": "decision", "step": "analyse", "text": "Computed 56 facts in code. The LLM labelled 100% of analysed comments. Alerts: Safety: 38; Possible legal or fraud: 16; Privacy or security: 7; Flagged by the LLM as urgent: 4; Reputation: 6. Spikes: Battery life from 2026-09-23."}
+{"t": 834.32, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 1.15, "tokens_in": 2057, "tokens_out": 50, "call": 109, "complete": true}
+{"t": 834.33, "type": "decision", "step": "investigate", "text": "LLM chose spike_drivers on 'Battery life' (Need to identify what words drove the recent 2.5x spike in negative battery life comments.). Found: Words far more common in negative Battery life comments from 2026-09-23 than before it: v1.2, update, half, software, backup, cut. This shows they happened together, not "}
+{"t": 846.5, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 5.83, "tokens_in": 2122, "tokens_out": 49, "call": 110, "complete": true}
+{"t": 846.5, "type": "decision", "step": "investigate", "text": "LLM chose top_quotes on 'Battery life' (Need to see exact user complaints regarding the recent v1.2 software update affecting battery life.). Found: Most engaged negative comments on Battery life: \"Honestly, my battery is swollen and the back cover is lifting\" (engagement 180); \"battery drains way too fast\" (engagemen"}
+{"t": 849.58, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 1.41, "tokens_in": 2205, "tokens_out": 51, "call": 111, "complete": true}
+{"t": 849.58, "type": "decision", "step": "investigate", "text": "LLM chose more_reasons on 'Battery life' (Need more detail on the battery life negative reasons to understand the v1.2 software update impact.). Found: Reasons for negative comments on Battery life: \"update ruined battery life\" (115); \"battery drains too fast\" (98); \"battery is terrible after update\" (67); \"battery drain"}
+{"t": 856.75, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 1.08, "tokens_in": 2281, "tokens_out": 42, "call": 112, "complete": true}
+{"t": 856.75, "type": "decision", "step": "investigate", "text": "LLM chose platform_split on 'Battery life' (Check platform distribution for the high-impact battery spike issues.). Found: Negative share for Battery life by platform: YouTube 78.9% (of 199), X 77.1% (of 319), Instagram 77.0% (of 209), Facebook 75.2% (of 101), Reddit 73.6% (of 91)."}
+{"t": 864.37, "type": "event", "step": "llm", "purpose": "investigate", "seconds": 1.2, "tokens_in": 2372, "tokens_out": 50, "call": 113, "complete": true}
+{"t": 864.37, "type": "decision", "step": "investigate", "text": "LLM decided there is enough evidence: All necessary checks including spikes, quotes, reasons, and platform splits for the primary issue (Battery life) have been completed.."}
+{"t": 873.44, "type": "event", "step": "llm", "purpose": "write", "seconds": 2.77, "tokens_in": 2421, "tokens_out": 749, "call": 114, "complete": true}
+{"t": 873.44, "type": "decision", "step": "write", "text": "LLM wrote draft 1: 6 points, 6 actions."}
+{"t": 873.44, "type": "decision", "step": "verify", "text": "Checker passed draft 1: every number, date and quote traces back to the facts it cites."}
+{"t": 873.51, "type": "decision", "step": "report", "text": "Report written to output_sample/gemini_flash_lite/report.html"}

@@ -1,0 +1,7 @@
+{
+ "name": "sxsw rules",
+ "rows": 8936,
+ "accuracy": 0.534,
+ "macro_f1": 0.462,
+ "majority_baseline": 0.603
+}

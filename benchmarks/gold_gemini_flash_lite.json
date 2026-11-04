@@ -1,0 +1,42 @@
+{
+ "all": {
+  "accuracy": 0.994,
+  "rows": 4054
+ },
+ "sarcasm": {
+  "accuracy": 1.0,
+  "rows": 130
+ },
+ "hinglish": {
+  "accuracy": 0.997,
+  "rows": 300
+ },
+ "indic": {
+  "accuracy": 1.0,
+  "rows": 95
+ },
+ "update_spike": {
+  "accuracy": 1.0,
+  "rows": 440
+ },
+ "macro_f1": 0.993,
+ "intent_accuracy": 0.988,
+ "safety": {
+  "found": 38,
+  "planted": 38,
+  "doubted_by_llm": 0,
+  "false_hits": 0
+ },
+ "legal": {
+  "found": 16,
+  "planted": 16,
+  "doubted_by_llm": 5,
+  "false_hits": 0
+ },
+ "privacy": {
+  "found": 7,
+  "planted": 7,
+  "doubted_by_llm": 0,
+  "false_hits": 0
+ }
+}

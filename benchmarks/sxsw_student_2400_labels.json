@@ -1,0 +1,8 @@
+{
+ "name": "sxsw student 2400 labels",
+ "rows": 2681,
+ "accuracy": 0.638,
+ "macro_f1": 0.532,
+ "majority_baseline": 0.603,
+ "train_labels": 2400
+}

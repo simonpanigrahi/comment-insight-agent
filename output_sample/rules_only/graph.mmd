@@ -1,0 +1,43 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	ingest(ingest)
+	clean(clean)
+	plan(plan)
+	discover_topics(discover_topics)
+	rule_labels(rule_labels)
+	llm_all(llm_all)
+	llm_budgeted(llm_budgeted)
+	check_labels(check_labels)
+	analyse(analyse)
+	investigate(investigate)
+	write(write)
+	verify(verify)
+	finish(finish)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> ingest;
+	analyse --> investigate;
+	check_labels -.-> analyse;
+	check_labels -.-> discover_topics;
+	clean --> plan;
+	discover_topics --> rule_labels;
+	ingest --> clean;
+	investigate -.-> write;
+	llm_all --> check_labels;
+	llm_budgeted --> check_labels;
+	plan --> discover_topics;
+	rule_labels -.-> check_labels;
+	rule_labels -.-> llm_all;
+	rule_labels -.-> llm_budgeted;
+	verify -.-> finish;
+	verify -.-> write;
+	write --> verify;
+	finish --> __end__;
+	investigate -.-> investigate;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

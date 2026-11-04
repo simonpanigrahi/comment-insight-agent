@@ -1,0 +1,15 @@
+{
+ "name": "airline llm qwen3-4b",
+ "rows": 300,
+ "accuracy": 0.787,
+ "macro_f1": 0.754,
+ "majority_baseline": 0.59,
+ "provider": "ollama",
+ "model": "qwen3:4b",
+ "calls": 25,
+ "cached_calls": 0,
+ "budget": null,
+ "tokens_in": 24603,
+ "tokens_out": 20969,
+ "seconds_in_llm": 2233.8
+}

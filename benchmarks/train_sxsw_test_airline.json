@@ -1,0 +1,8 @@
+{
+ "name": "train sxsw test airline",
+ "rows": 14640,
+ "accuracy": 0.418,
+ "macro_f1": 0.414,
+ "majority_baseline": 0.627,
+ "train_labels": 8936
+}
