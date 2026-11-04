@@ -44,7 +44,8 @@ def show(text: str, llm: LLM | None, topics: list[str]) -> None:
     sentiment = rules.sentiment(clean)
     print(f"Rules:     {sentiment}, {rules.intent(clean, sentiment)}, alert: {rules.risk_type(clean) or 'none'}")
     if llm is None:
-        print("LLM:       not used. Add --provider gemini or --provider ollama.")
+        print(f"Reason:    {rules.reason_snippet(clean, sentiment)} (rules copy this from the comment)")
+        print("LLM:       not used, so this is a rough result. Add --provider gemini or --provider ollama for the LLM's label, reason and quote.")
         return
     if row["hold_from_llm"] or row["status"] == "injection":
         print("LLM:       held back, because this looks like prompt injection.")

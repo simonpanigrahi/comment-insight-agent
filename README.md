@@ -49,16 +49,25 @@ A local model has no cap on calls, so it labels every distinct comment and shows
 
 Use your own file the same way. Column names are detected, so a file with `text`, `tweet_text` or `message` all work. If detection fails, use `--text-col`.
 
-## Check it yourself
+## Test it yourself
 
-See how one comment is read, with its sentiment, reason and quote. The first command uses rules only and needs no key:
+**Your own comment.** After the install above, type any comment and see how it is read:
 
 ```bash
 python scripts/try_comment.py "Wow, the phone lasted a whole 2 hours. Great job."
-python scripts/try_comment.py "Wow, the phone lasted a whole 2 hours. Great job." --provider gemini --model gemini-3.5-flash-lite
 ```
 
-Compare a finished run with labels written by people, and read where they differ:
+With no key, only the rules run. They are rough: they read this sarcastic comment as positive. For the LLM's sentiment, reason and quote, add a model. A [free Gemini key](https://aistudio.google.com/app/apikey) is the quickest, or use a local model:
+
+```bash
+cp .env.example .env    # then put your key after GEMINI_API_KEY= in .env
+python scripts/try_comment.py "Wow, the phone lasted a whole 2 hours. Great job." --provider gemini --model gemini-3.5-flash-lite
+python scripts/try_comment.py "Wow, the phone lasted a whole 2 hours. Great job." --provider ollama
+```
+
+Leave out the comment and it asks for comments one by one. Add `--topics "Delivery,Refunds"` to choose from your own topic names.
+
+**Against labels written by people.** Compare a finished run with the human labels, and read where they differ:
 
 ```bash
 python scripts/get_benchmarks.py
