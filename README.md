@@ -118,7 +118,7 @@ Every run saves its decisions in `run_log.jsonl` and lists them in the report, s
 | What should be checked next? | The facts so far | The LLM picks a tool (spike drivers, platform split, top quotes, more reasons, time trend, search) or stops. An unknown topic is rejected, and a spike must be looked into before it can stop. The log says who really chose. |
 | Can this draft be trusted? | The code checker's result | Sends the exact problems and the draft back to the writer, at most twice. Anything still failing is removed, a failed headline is replaced with a fixed sentence, and the report counts what was removed. If too little survives, a fixed-sentence writer takes over. |
 
-In the terms of Anthropic's [Building Effective Agents](https://www.anthropic.com/research/building-effective-agents), this uses routing, an evaluator-optimizer loop, and an LLM-directed tool loop. Tool choices are JSON validated by Pydantic rather than native function calling, because support for that varies across small local models.
+In common agent-design terms, this uses routing, an evaluator-optimizer loop, and an LLM-directed tool loop. Tool choices are JSON validated by Pydantic rather than native function calling, because support for that varies across small local models.
 
 ## How far the report can be trusted
 
@@ -259,7 +259,3 @@ scripts/               sample data, benchmark download, evaluation, speed test, 
 `data/sample_comments.csv` is synthetic: the Kestrel One, its company and its comments are made up. It has planted patterns (a battery spike after an update, rare safety reports, sarcasm, Hinglish, Hindi, Odia, spam, injection attempts). `scripts/make_sample_data.py` rebuilds it.
 
 The benchmarks are the CrowdFlower "Twitter US Airline Sentiment" and "Brands and Product Emotions" datasets, downloaded from public mirrors by `scripts/get_benchmarks.py` and not stored here, apart from the tweets in the sample reports under `output_sample/`. The airline tweets are about a service rather than a product, so the SXSW tweets about Apple and Google products are the closer match to the task. The airline set adds human reasons for its negative tweets, which `scripts/compare_labels.py` can show. See the original publishers for their terms.
-
-## Development note
-
-I built this in about a day with Claude as an AI coding assistant. I ran the LLM results reported here on my own laptop, re-ran the baseline tables, read the reports, and went through the code so that I can explain it and change it.
